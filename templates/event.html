@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ e.title }}｜台4線大溪-龍潭段熱點</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+</head>
+<body class="event-page">
+<header class="site-header slim">
+  <div class="wrap">
+    <p class="crumb"><a href="../../">← 回總覽</a></p>
+    <div class="tag-row">
+      <span class="ev-tag tag-{{ e.type }}">{% if e.type == 'hazard' %}防災事件{% else %}路殺事件{% endif %}</span>
+      <span class="ev-corridor c-{{ e.corridor }}">
+        {% if e.corridor == 'inside' %}廊道內
+        {% elif e.corridor == 'edge' %}廊道邊緣
+        {% elif e.corridor == 'co-line' %}共線段
+        {% else %}參考事件
+        {% endif %}
+      </span>
+      <span class="ev-cat">{{ e.category }}</span>
+    </div>
+    <h1>{{ e.title }}</h1>
+    <p class="event-meta-line">
+      {% if e.km %}{{ e.km }}｜{% endif %}
+      {{ e.date }}
+      {% if e.lat and e.lng %}｜{{ "%.5f"|format(e.lat|float) }}, {{ "%.5f"|format(e.lng|float) }}{% endif %}
+    </p>
+  </div>
+</header>
+
+{% if e.lat and e.lng %}
+<section class="section">
+  <div class="wrap">
+    <div id="ev-map" data-lat="{{ e.lat }}" data-lng="{{ e.lng }}" data-type="{{ e.type }}"></div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap">
+    <h2>完整欄位</h2>
+    <table class="ev-table">
+      <tbody>
+        <tr><th>事件編號</th><td>{{ e.id }}</td></tr>
+        <tr><th>里程樁</th><td>{{ e.km or '—' }}</td></tr>
+        <tr><th>位置描述</th><td>{{ e.location_desc or '—' }}</td></tr>
+        <tr><th>座標</th><td>{% if e.lat and e.lng %}{{ e.lat }}, {{ e.lng }}{% else %}—{% endif %}</td></tr>
+        {% if e.type == 'hazard' %}
+        <tr><th>災害類型</th><td>{{ e.hazard_type or '—' }}</td></tr>
+        <tr><th>發生日期</th><td>{{ e.date or '—' }}</td></tr>
+        <tr><th>誘發原因</th><td>{{ e.cause or '—' }}</td></tr>
+        <tr><th>影響範圍</th><td>{{ e.impact or '—' }}</td></tr>
+        <tr><th>搶修時數</th><td>{{ e.repair_hours or '—' }}</td></tr>
+        <tr><th>搶修單位</th><td>{{ e.repair_unit or '—' }}</td></tr>
+        <tr><th>修復金額</th><td>{% if e.cost %}NT$ {{ '{:,}'.format(e.cost|int) }}{% else %}—{% endif %}</td></tr>
+        <tr><th>是否已改善</th><td>{{ e.improved or '—' }}</td></tr>
+        {% else %}
+        <tr><th>物種</th><td>{{ e.species or '—' }}</td></tr>
+        <tr><th>個體數量</th><td>{{ e.count or '—' }}</td></tr>
+        <tr><th>發現日期</th><td>{{ e.date or '—' }}</td></tr>
+        <tr><th>發現時段</th><td>{{ e.time_of_day or '—' }}</td></tr>
+        <tr><th>天氣</th><td>{{ e.weather or '—' }}</td></tr>
+        <tr><th>通報者</th><td>{{ e.reporter or '—' }}</td></tr>
+        <tr><th>附近環境</th><td>{{ e.environment or '—' }}</td></tr>
+        <tr><th>有無友善設施</th><td>{{ e.friendly_facility or '—' }}</td></tr>
+        {% endif %}
+        <tr><th>資料來源</th><td>
+          {{ e.source_text or '—' }}
+          {% if e.source_url %}<br><a href="{{ e.source_url }}" target="_blank" rel="noopener">{{ e.source_url }}</a>{% endif %}
+        </td></tr>
+        <tr><th>備註</th><td>{{ e.notes or '—' }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<nav class="pager">
+  <div class="wrap">
+    {% if prev_id %}<a class="prev" href="../{{ prev_id }}/">← 上一筆</a>{% else %}<span class="prev disabled">← 上一筆</span>{% endif %}
+    <a class="home" href="../../">回總覽</a>
+    {% if next_id %}<a class="next" href="../{{ next_id }}/">下一筆 →</a>{% else %}<span class="next disabled">下一筆 →</span>{% endif %}
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="build">Build {{ build_time }}</p>
+  </div>
+</footer>
+
+{% if e.lat and e.lng %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(function(){
+  var el = document.getElementById('ev-map');
+  if (!el) return;
+  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+  var m = L.map('ev-map').setView([lat, lng], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap 貢獻者', maxZoom: 19
+  }).addTo(m);
+  var color = el.dataset.type === 'hazard' ? '#1f6feb' : '#d33';
+  L.circleMarker([lat, lng], {radius: 10, color: color, weight: 3, fillColor: color, fillOpacity: 0.55}).addTo(m);
+})();
+</script>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台4線大溪-龍潭段 防災+路殺熱點分析</title>
+<meta name="description" content="台4線大溪-龍潭段公路防災與野生動物路殺公開熱點分析。每一筆事件均附完整資料與資料來源連結。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>台4線大溪-龍潭段 防災+路殺熱點分析</h1>
+    <p class="lede">只收錄能由公路局公告、新聞報導、路殺社紀錄或政府文件確認地點與時間，且能可靠定位的事件。點選任何熱點，都可直接讀原始來源。</p>
+    <div class="stats">
+      <div class="stat"><span class="num">{{ stats.hz_count }}</span><span class="label">防災事件</span></div>
+      <div class="stat"><span class="num">{{ stats.rk_count }}</span><span class="label">路殺事件</span></div>
+      <div class="stat"><span class="num">{{ stats.species_count }}</span><span class="label">涵蓋物種</span></div>
+      <div class="stat"><span class="num">{{ stats.hazard_type_count }}</span><span class="label">災害類型</span></div>
+      <div class="stat"><span class="num">{{ stats.corridor_count }}</span><span class="label">廊道內事件</span></div>
+      <div class="stat"><span class="num">{{ stats.verified_pct }}%</span><span class="label">可查證比例</span></div>
+    </div>
+    <p class="note">分析範圍：台4線 25K（大溪老街周邊）至 41.544K（龍潭大坪），路中心線兩側 500 公尺為緩衝廊道。資料期間：{{ stats.earliest }} 至 {{ stats.latest }}。凡標「非台4廊道」的參考事件，作為周邊風險背景，不列入廊道統計。</p>
+  </div>
+</header>
+
+<section class="section" id="hotspot-overview">
+  <div class="wrap">
+    <h2>熱點總覽</h2>
+    <p class="sec-lede">先看整段廊道的空間分布；再切換下方可點地圖查每一則原始來源。</p>
+    <figure class="hotspot-fig">
+      <img src="assets/hotspot-overview.svg" alt="台4線大溪-龍潭段廊道防災+路殺熱點示意，涵蓋大溪橋、崁津大橋、石門水庫周邊、龍潭市區外圍。">
+      <figcaption>熱度以事件密度計。廊道內 {{ stats.corridor_count }} 則、參考事件併同顯示。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="map-section">
+  <div class="wrap">
+    <h2>可點查證地圖</h2>
+    <p class="sec-lede">兩層事件可獨立開關；點熱點展開該地全部事件；側欄可依類型、年份、廊道位置篩選。</p>
+    <div class="map-controls">
+      <fieldset>
+        <legend>圖層</legend>
+        <label><input type="checkbox" id="lyr-hazard" checked> 防災事件（藍）</label>
+        <label><input type="checkbox" id="lyr-roadkill" checked> 路殺事件（紅）</label>
+        <label><input type="checkbox" id="lyr-heat" checked> 熱力圖</label>
+      </fieldset>
+      <fieldset>
+        <legend>廊道位置</legend>
+        <label><input type="checkbox" class="f-corridor" value="inside" checked> 廊道內</label>
+        <label><input type="checkbox" class="f-corridor" value="edge" checked> 廊道邊緣</label>
+        <label><input type="checkbox" class="f-corridor" value="co-line" checked> 共線段</label>
+        <label><input type="checkbox" class="f-corridor" value="reference" checked> 參考事件</label>
+      </fieldset>
+      <fieldset>
+        <legend>年份</legend>
+        <select id="f-year"><option value="">全部</option></select>
+      </fieldset>
+    </div>
+    <div id="map"></div>
+    <p class="map-note">底圖：© OpenStreetMap 貢獻者。座標若為推估，事件詳細頁的備註會註明。</p>
+  </div>
+</section>
+
+<section class="section" id="event-list">
+  <div class="wrap">
+    <h2>全部可查證事件 <span class="count-badge">{{ events|length }} 筆</span></h2>
+    <p class="sec-lede">依日期由新到舊排序。即使地圖載入失敗，右側「獨立頁」仍可直接打開完整欄位與資料來源。</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="all">全部 ({{ events|length }})</button>
+      <button class="tab-btn" data-tab="hazard">防災 ({{ stats.hz_count }})</button>
+      <button class="tab-btn" data-tab="roadkill">路殺 ({{ stats.rk_count }})</button>
+    </div>
+
+    <ul class="ev-list">
+      {% for e in events %}
+      <li class="ev-item ev-{{ e.type }}" data-type="{{ e.type }}">
+        <div class="ev-line">
+          <span class="ev-tag tag-{{ e.type }}">{% if e.type == 'hazard' %}防災{% else %}路殺{% endif %}</span>
+          <span class="ev-cat">{{ e.category }}</span>
+          <span class="ev-date">{{ e.date }}</span>
+          <span class="ev-corridor c-{{ e.corridor }}">
+            {% if e.corridor == 'inside' %}廊道內
+            {% elif e.corridor == 'edge' %}廊道邊緣
+            {% elif e.corridor == 'co-line' %}共線段
+            {% else %}參考事件
+            {% endif %}
+          </span>
+        </div>
+        <div class="ev-title">{{ e.title }}</div>
+        <div class="ev-meta">
+          {% if e.km %}<span>{{ e.km }}</span>{% endif %}
+          {% if e.source_text %}<span>來源：{{ e.source_text }}</span>{% endif %}
+          <a class="detail-link" href="q/{{ e.id }}/">獨立頁 →</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% if pairs %}
+<section class="section" id="overlap">
+  <div class="wrap">
+    <h2>防災 ∩ 路殺 500 公尺重疊熱點 <span class="count-badge">{{ pairs|length }} 對</span></h2>
+    <ul class="pair-list">
+      {% for p in pairs %}
+      <li>
+        <a href="q/{{ p.hazard_id }}/">{{ p.hazard_title }}</a>
+        ↔
+        <a href="q/{{ p.roadkill_id }}/">{{ p.roadkill_title }}</a>
+        <span class="dist">{{ p.distance_m }} m</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" id="method">
+  <div class="wrap">
+    <h2>方法、收錄規則、資料來源與限制</h2>
+    <div class="method-block">
+      <h3>收錄規則</h3>
+      <p>事件必須：(a) 有可查證的原始來源（新聞連結、公路局公告、路殺社紀錄或政府文件）；(b) 有明確地點描述能定位；(c) 發生於台4線 25K-41.544K 範圍或路中心線兩側 500m 緩衝廊道內。廊道外但同區具參考價值者，標「參考事件」併同顯示，不列入廊道統計。</p>
+    </div>
+    <div class="method-block">
+      <h3>排除規則</h3>
+      <p>無法定位者、僅為傳聞未查證者、發生於台4線範圍外且無區域參考價值者，不放進地圖。</p>
+    </div>
+    <div class="method-block">
+      <h3>重複處理</h3>
+      <p>同一地點多次發生仍各算一筆；巡守隊/野放等彙整型資料以「AGG」為 ID 尾綴且日期記為當年12/31以便呈現。</p>
+    </div>
+    <div class="method-block">
+      <h3>資料來源</h3>
+      <ul>
+        <li>公路局北區養護工程分局復興工務段 公告與新聞稿（thbu1.thb.gov.tw）</li>
+        <li>臺灣動物路死觀察網 路殺社（roadkill.tw）</li>
+        <li>主流媒體：自由時報、聯合新聞網、中國時報、桃園電子報、ETtoday</li>
+        <li>交通部 168 交通安全入口網（歷史事件）</li>
+      </ul>
+    </div>
+    <div class="method-block">
+      <h3>已知限制與未取得資料源</h3>
+      <ul>
+        <li>iNaturalist、TBN 台灣生物多樣性網、路殺社進階查詢 需登入才能匯出座標</li>
+        <li>公路局北養內部災害通報彙整表 需依《政府資訊公開法》申請</li>
+        <li>政府採購網（tender.nat.gov.tw）台4線災修合約 建議另行檢索反推事件</li>
+        <li>中央地調所山崩地滑資料庫 需 GIS 介接</li>
+        <li>桃園市府 EOC 日誌、消防局出勤紀錄 非公開</li>
+        <li>台4線 25K-39K 實際養護單位為復興工務段（非大溪工務段），北養無「大溪工務段」建制</li>
+      </ul>
+    </div>
+    <div class="method-block">
+      <h3>座標精度</h3>
+      <p>WGS84 十進位度，5 位小數（約 1 公尺）。座標由地標推估者，事件詳細頁備註標明「座標推估」。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>本頁專責熱點空間集中度與原始來源。事件真偽、責任歸屬另由主管機關認定。</p>
+    <p class="build">Build {{ build_time }}｜資料來源：<code>data/events.xlsx</code></p>
+  </div>
+</footer>
+
+<script id="events-data" type="application/json">{{ events_json|safe }}</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
