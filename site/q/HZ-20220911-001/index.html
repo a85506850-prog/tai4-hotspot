@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>淹水｜龍潭區雙連街209巷（霄裡溪排水幹線九座寮橋上游段）｜台4線大溪-龍潭段熱點</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+</head>
+<body class="event-page">
+<header class="site-header slim">
+  <div class="wrap">
+    <p class="crumb"><a href="../../">← 回總覽</a></p>
+    <div class="tag-row">
+      <span class="ev-tag tag-hazard">防災事件</span>
+      <span class="ev-corridor c-edge">
+廊道邊緣
+      </span>
+      <span class="ev-cat">淹水</span>
+    </div>
+    <h1>淹水｜龍潭區雙連街209巷（霄裡溪排水幹線九座寮橋上游段）</h1>
+    <p class="event-meta-line">
+台4線約40.5K｜      2022-09-11
+｜24.91060, 121.22490    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div id="ev-map" data-lat="24.9106" data-lng="121.2249" data-type="hazard"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>完整欄位</h2>
+    <table class="ev-table">
+      <tbody>
+        <tr><th>事件編號</th><td>HZ-20220911-001</td></tr>
+        <tr><th>里程樁</th><td>台4線約40.5K</td></tr>
+        <tr><th>位置描述</th><td>龍潭區雙連街209巷（霄裡溪排水幹線九座寮橋上游段）</td></tr>
+        <tr><th>座標</th><td>24.9106, 121.2249</td></tr>
+        <tr><th>災害類型</th><td>淹水</td></tr>
+        <tr><th>發生日期</th><td>2022-09-11</td></tr>
+        <tr><th>誘發原因</th><td>豪雨</td></tr>
+        <tr><th>影響範圍</th><td>無封閉</td></tr>
+        <tr><th>搶修時數</th><td>—</td></tr>
+        <tr><th>搶修單位</th><td>桃園市政府水務局</td></tr>
+        <tr><th>修復金額</th><td>NT$ 22,804,000</td></tr>
+        <tr><th>是否已改善</th><td>是</td></tr>
+        <tr><th>資料來源</th><td>
+          聯合新聞網 7985666
+<br><a href="https://udn.com/news/story/7324/7985666" target="_blank" rel="noopener">https://udn.com/news/story/7324/7985666</a>        </td></tr>
+        <tr><th>備註</th><td>台4廊道邊緣（距台4中正路約200~500m）；上華里、九龍里淹水；改善工程 2023/8/21~2024/6/1；座標推估</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<nav class="pager">
+  <div class="wrap">
+<a class="prev" href="../HZ-20230107-001/">← 上一筆</a>    <a class="home" href="../../">回總覽</a>
+<a class="next" href="../HZ-20220530-001/">下一筆 →</a>  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="build">Build 2026-07-19 02:47</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(function(){
+  var el = document.getElementById('ev-map');
+  if (!el) return;
+  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+  var m = L.map('ev-map').setView([lat, lng], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap 貢獻者', maxZoom: 19
+  }).addTo(m);
+  var color = el.dataset.type === 'hazard' ? '#1f6feb' : '#d33';
+  L.circleMarker([lat, lng], {radius: 10, color: color, weight: 3, fillColor: color, fillOpacity: 0.55}).addTo(m);
+})();
+</script>
+</body>
+</html>

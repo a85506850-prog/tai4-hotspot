@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>穿山甲路殺｜龍潭區渴望里 渴望二路（渴望園區周邊丘陵，霄里溪上游）｜台4線大溪-龍潭段熱點</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+</head>
+<body class="event-page">
+<header class="site-header slim">
+  <div class="wrap">
+    <p class="crumb"><a href="../../">← 回總覽</a></p>
+    <div class="tag-row">
+      <span class="ev-tag tag-roadkill">路殺事件</span>
+      <span class="ev-corridor c-reference">
+參考事件
+      </span>
+      <span class="ev-cat">穿山甲</span>
+    </div>
+    <h1>穿山甲路殺｜龍潭區渴望里 渴望二路（渴望園區周邊丘陵，霄里溪上游）</h1>
+    <p class="event-meta-line">
+非台4線｜      2025-08-27
+｜24.88200, 121.22100    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div id="ev-map" data-lat="24.882" data-lng="121.221" data-type="roadkill"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>完整欄位</h2>
+    <table class="ev-table">
+      <tbody>
+        <tr><th>事件編號</th><td>RK-20250827-001</td></tr>
+        <tr><th>里程樁</th><td>非台4線</td></tr>
+        <tr><th>位置描述</th><td>龍潭區渴望里 渴望二路（渴望園區周邊丘陵，霄里溪上游）</td></tr>
+        <tr><th>座標</th><td>24.882, 121.221</td></tr>
+        <tr><th>物種</th><td>穿山甲</td></tr>
+        <tr><th>個體數量</th><td>1</td></tr>
+        <tr><th>發現日期</th><td>2025-08-27</td></tr>
+        <tr><th>發現時段</th><td>夜間(19-4)</td></tr>
+        <tr><th>天氣</th><td>雨</td></tr>
+        <tr><th>通報者</th><td>渴望里里長洪揚才/里民</td></tr>
+        <tr><th>附近環境</th><td>森林邊緣</td></tr>
+        <tr><th>有無友善設施</th><td>無</td></tr>
+        <tr><th>資料來源</th><td>
+          自由時報 5164892
+<br><a href="https://news.ltn.com.tw/news/Taoyuan/breakingnews/5164892" target="_blank" rel="noopener">https://news.ltn.com.tw/news/Taoyuan/breakingnews/5164892</a>        </td></tr>
+        <tr><th>備註</th><td>非台4廊道 - 參考事件；未滿1歲幼體，體重2.2kg，尾部受傷；由桃園農業局林務科、桃園鳥會野生動物診所收治；2025/9/2野放；座標推估</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<nav class="pager">
+  <div class="wrap">
+<a class="prev" href="../HZ-20251222-001/">← 上一筆</a>    <a class="home" href="../../">回總覽</a>
+<a class="next" href="../RK-2024-AGG-001/">下一筆 →</a>  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="build">Build 2026-07-19 02:47</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(function(){
+  var el = document.getElementById('ev-map');
+  if (!el) return;
+  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+  var m = L.map('ev-map').setView([lat, lng], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap 貢獻者', maxZoom: 19
+  }).addTo(m);
+  var color = el.dataset.type === 'hazard' ? '#1f6feb' : '#d33';
+  L.circleMarker([lat, lng], {radius: 10, color: color, weight: 3, fillColor: color, fillOpacity: 0.55}).addTo(m);
+})();
+</script>
+</body>
+</html>

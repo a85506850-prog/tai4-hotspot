@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>邊坡滑動｜大溪往崎頂方向上坡路段（歷史參考）｜台4線大溪-龍潭段熱點</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+</head>
+<body class="event-page">
+<header class="site-header slim">
+  <div class="wrap">
+    <p class="crumb"><a href="../../">← 回總覽</a></p>
+    <div class="tag-row">
+      <span class="ev-tag tag-hazard">防災事件</span>
+      <span class="ev-corridor c-inside">
+廊道內
+      </span>
+      <span class="ev-cat">邊坡滑動</span>
+    </div>
+    <h1>邊坡滑動｜大溪往崎頂方向上坡路段（歷史參考）</h1>
+    <p class="event-meta-line">
+台4線約26K｜      2014-02-01
+｜24.85990, 121.28020    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div id="ev-map" data-lat="24.8599" data-lng="121.2802" data-type="hazard"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>完整欄位</h2>
+    <table class="ev-table">
+      <tbody>
+        <tr><th>事件編號</th><td>HZ-20140201-001</td></tr>
+        <tr><th>里程樁</th><td>台4線約26K</td></tr>
+        <tr><th>位置描述</th><td>大溪往崎頂方向上坡路段（歷史參考）</td></tr>
+        <tr><th>座標</th><td>24.8599, 121.2802</td></tr>
+        <tr><th>災害類型</th><td>邊坡滑動</td></tr>
+        <tr><th>發生日期</th><td>2014-02-01</td></tr>
+        <tr><th>誘發原因</th><td>持續性降雨</td></tr>
+        <tr><th>影響範圍</th><td>單線封閉</td></tr>
+        <tr><th>搶修時數</th><td>—</td></tr>
+        <tr><th>搶修單位</th><td>公路總局復興工務段</td></tr>
+        <tr><th>修復金額</th><td>—</td></tr>
+        <tr><th>是否已改善</th><td>是</td></tr>
+        <tr><th>資料來源</th><td>
+          168交通安全入口網
+<br><a href="https://168.motc.gov.tw/theme/news/post/1906121101446" target="_blank" rel="noopener">https://168.motc.gov.tw/theme/news/post/1906121101446</a>        </td></tr>
+        <tr><th>備註</th><td>歷史參考事件（時間範圍外，供背景使用）；路面50m×15cm 張力裂縫；2014/3/15搶通；座標推估</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<nav class="pager">
+  <div class="wrap">
+<a class="prev" href="../RK-20201026-001/">← 上一筆</a>    <a class="home" href="../../">回總覽</a>
+<span class="next disabled">下一筆 →</span>  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="build">Build 2026-07-19 02:47</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(function(){
+  var el = document.getElementById('ev-map');
+  if (!el) return;
+  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+  var m = L.map('ev-map').setView([lat, lng], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap 貢獻者', maxZoom: 19
+  }).addTo(m);
+  var color = el.dataset.type === 'hazard' ? '#1f6feb' : '#d33';
+  L.circleMarker([lat, lng], {radius: 10, color: color, weight: 3, fillColor: color, fillOpacity: 0.55}).addTo(m);
+})();
+</script>
+</body>
+</html>

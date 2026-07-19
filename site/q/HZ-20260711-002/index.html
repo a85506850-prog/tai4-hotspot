@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>樹倒｜龍潭區新和路（多處斷枝）｜台4線大溪-龍潭段熱點</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+</head>
+<body class="event-page">
+<header class="site-header slim">
+  <div class="wrap">
+    <p class="crumb"><a href="../../">← 回總覽</a></p>
+    <div class="tag-row">
+      <span class="ev-tag tag-hazard">防災事件</span>
+      <span class="ev-corridor c-edge">
+廊道邊緣
+      </span>
+      <span class="ev-cat">樹倒</span>
+    </div>
+    <h1>樹倒｜龍潭區新和路（多處斷枝）</h1>
+    <p class="event-meta-line">
+台4線約41K｜      2026-07-11
+｜24.86050, 121.20800    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div id="ev-map" data-lat="24.8605" data-lng="121.208" data-type="hazard"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>完整欄位</h2>
+    <table class="ev-table">
+      <tbody>
+        <tr><th>事件編號</th><td>HZ-20260711-002</td></tr>
+        <tr><th>里程樁</th><td>台4線約41K</td></tr>
+        <tr><th>位置描述</th><td>龍潭區新和路（多處斷枝）</td></tr>
+        <tr><th>座標</th><td>24.8605, 121.208</td></tr>
+        <tr><th>災害類型</th><td>樹倒</td></tr>
+        <tr><th>發生日期</th><td>2026-07-11</td></tr>
+        <tr><th>誘發原因</th><td>颱風</td></tr>
+        <tr><th>影響範圍</th><td>部分車道</td></tr>
+        <tr><th>搶修時數</th><td>—</td></tr>
+        <tr><th>搶修單位</th><td>高平派出所+工務單位</td></tr>
+        <tr><th>修復金額</th><td>—</td></tr>
+        <tr><th>是否已改善</th><td>是</td></tr>
+        <tr><th>資料來源</th><td>
+          ETtoday 20260713/3199969
+<br><a href="https://www.ettoday.net/news/20260713/3199969.htm" target="_blank" rel="noopener">https://www.ettoday.net/news/20260713/3199969.htm</a>        </td></tr>
+        <tr><th>備註</th><td>台4廊道邊緣~廊道外（距台4中正路約500~1200m）；巴威颱風強陣風；座標推估</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<nav class="pager">
+  <div class="wrap">
+<a class="prev" href="../HZ-20260711-001/">← 上一筆</a>    <a class="home" href="../../">回總覽</a>
+<a class="next" href="../HZ-20260711-003/">下一筆 →</a>  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="build">Build 2026-07-19 02:47</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(function(){
+  var el = document.getElementById('ev-map');
+  if (!el) return;
+  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+  var m = L.map('ev-map').setView([lat, lng], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap 貢獻者', maxZoom: 19
+  }).addTo(m);
+  var color = el.dataset.type === 'hazard' ? '#1f6feb' : '#d33';
+  L.circleMarker([lat, lng], {radius: 10, color: color, weight: 3, fillColor: color, fillOpacity: 0.55}).addTo(m);
+})();
+</script>
+</body>
+</html>
