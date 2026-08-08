@@ -191,12 +191,13 @@
 <section class="section" id="trend">
   <div class="wrap">
     <h2>年度趨勢與分布</h2>
-    <p class="sec-lede">115 年度統計至 8 月（進行中年度），趨勢判讀請注意。</p>
-    <div class="chart-grid">
-      <div class="chart-box"><h3>案件數 × 年度</h3><canvas id="chart-year"></canvas></div>
-      <div class="chart-box"><h3>缺失案件 × 類型</h3><canvas id="chart-category"></canvas></div>
-      <div class="chart-box"><h3>案件 × 路線</h3><canvas id="chart-route"></canvas></div>
-      <div class="chart-box"><h3>災害 vs 養護</h3><canvas id="chart-kind"></canvas></div>
+    <p class="sec-lede">115 年度統計至 8 月（進行中年度），趨勢判讀請注意。月趨勢折線可看出季節高峰。</p>
+    <div class="chart-box wide"><h3>月趨勢（災害 vs 養護，共 55 個月）</h3><canvas id="chart-month"></canvas></div>
+    <div class="chart-grid" style="margin-top:20px">
+      <div class="chart-box"><h3>年度 × 類型（堆疊）</h3><canvas id="chart-year-cat"></canvas></div>
+      <div class="chart-box"><h3>年度 × 路線（堆疊）</h3><canvas id="chart-year-route"></canvas></div>
+      <div class="chart-box"><h3>缺失案件 × 類型（總計）</h3><canvas id="chart-category"></canvas></div>
+      <div class="chart-box"><h3>災害 vs 養護（總計）</h3><canvas id="chart-kind"></canvas></div>
     </div>
   </div>
 </section>
@@ -265,7 +266,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>本頁呈現養護案件的空間集中度與統計。金額為估算，案件性質與責任歸屬以主管機關認定為準。</p>
-    <p class="build">Build 2026-08-08 17:45｜資料源：<code>data/*.json</code></p>
+    <p class="build">Build 2026-08-08 19:55｜資料源：<code>data/*.json</code></p>
   </div>
 </footer>
 

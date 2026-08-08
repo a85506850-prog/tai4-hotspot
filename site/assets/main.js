@@ -250,13 +250,31 @@
     var font = { family: "'Noto Sans TC', sans-serif" };
     Chart.defaults.font.family = font.family;
 
-    barChart("chart-year", Object.keys(c.cases_by_year).map(y => "民" + y),
-      [{ label: "全部案件", data: Object.values(c.cases_by_year), backgroundColor: "#1f6feb" },
-       { label: "缺失/維修", data: Object.values(c.defects_by_year), backgroundColor: "#9ec5f2" }]);
+    // 月趨勢折線（民國月份標籤）
+    var mt = c.monthly_trend;
+    if (mt) {
+      lineChart("chart-month", mt.months.map(mmLabel),
+        [{ label: "養護", data: mt["養護"], borderColor: "#1d9e75", backgroundColor: "#1d9e75", tension: 0.25, pointRadius: 2 },
+         { label: "災害", data: mt["災害"], borderColor: "#e24b4a", backgroundColor: "#e24b4a", tension: 0.25, pointRadius: 2 }]);
+    }
+
+    // 年度 × 類型 堆疊
+    var yc = c.year_category;
+    if (yc) {
+      var catColors = ["#d9534f", "#f0ad4e", "#1f6feb", "#1d9e75", "#7d1fa8", "#e8843c", "#5bc0de", "#888", "#bbb"];
+      stackedBar("chart-year-cat", yc.years.map(y => "民" + y),
+        yc.categories.map((cat, i) => ({ label: cat, data: yc.series[cat], backgroundColor: catColors[i % catColors.length] })));
+    }
+
+    // 年度 × 路線 堆疊
+    var yrt = c.year_route;
+    if (yrt) {
+      var rc = { "台3線": "#d9534f", "台3乙線": "#f0ad4e", "台4線": "#1f6feb", "未標": "#bbb" };
+      stackedBar("chart-year-route", yrt.years.map(y => "民" + y),
+        yrt.routes.map(r => ({ label: r, data: yrt.series[r], backgroundColor: rc[r] || "#888" })));
+    }
 
     hbarChart("chart-category", Object.keys(c.by_category), Object.values(c.by_category), "#d9534f");
-    pieChart("chart-route", Object.keys(c.by_route), Object.values(c.by_route),
-      Object.keys(c.by_route).map(r => ({ "台3線": "#d9534f", "台3乙線": "#f0ad4e", "台4線": "#1f6feb", "未標": "#bbb" }[r] || "#888")));
     pieChart("chart-kind", Object.keys(c.by_kind), Object.values(c.by_kind), ["#e24b4a", "#1d9e75"]);
     hbarChart("chart-species", Object.keys(c.rk_species), Object.values(c.rk_species), "#7d1fa8");
 
@@ -295,6 +313,37 @@
       data: { labels: labels, datasets: [{ data: data, backgroundColor: colors }] },
       options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "right" } } }
     });
+  }
+  function lineChart(id, labels, datasets) {
+    var el = document.getElementById(id); if (!el) return;
+    new Chart(el, {
+      type: "line",
+      data: { labels: labels, datasets: datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+        plugins: { legend: { display: true } },
+        scales: { y: { beginAtZero: true }, x: { ticks: { maxTicksLimit: 14, autoSkip: true } } }
+      }
+    });
+  }
+  function stackedBar(id, labels, datasets) {
+    var el = document.getElementById(id); if (!el) return;
+    new Chart(el, {
+      type: "bar",
+      data: { labels: labels, datasets: datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: true, labels: { boxWidth: 12, font: { size: 11 } } } },
+        scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }
+      }
+    });
+  }
+  function mmLabel(m) {
+    // "111.09" -> "111/9"；每年首月顯示年，其餘只顯示月，避免太擠
+    var p = String(m).split(".");
+    if (p.length !== 2) return m;
+    var mo = parseInt(p[1], 10);
+    return mo === 1 ? "民" + p[0] : p[0] + "/" + mo;
   }
 
   function esc(s) {
