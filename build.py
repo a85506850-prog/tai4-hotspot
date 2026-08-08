@@ -124,6 +124,45 @@ def main():
 
     top_hotspots = sorted(hotspots, key=lambda h: -h["total"])[:15]
 
+    # ---- 月趨勢（災害/養護分線）----
+    month_kind = defaultdict(lambda: {"災害": 0, "養護": 0})
+    for c in cases:
+        mo = c.get("month")
+        if mo:
+            month_kind[mo][c["kind"]] += 1
+    months_sorted = sorted(month_kind)
+    monthly_trend = {
+        "months": months_sorted,
+        "災害": [month_kind[m]["災害"] for m in months_sorted],
+        "養護": [month_kind[m]["養護"] for m in months_sorted],
+    }
+
+    # ---- 年度 × 類型（堆疊；取前 8 大類型，其餘併「其他」）----
+    top_cats = [c for c, _ in by_category.most_common(8)]
+    yc = {y: Counter() for y in years}
+    for c in defects:
+        cat = c["category"] or "其他"
+        if cat not in top_cats:
+            cat = "其他"
+        yc[c["year"]][cat] += 1
+    cat_order = top_cats if "其他" in top_cats else top_cats + ["其他"]
+    year_category = {
+        "years": [str(y) for y in years],
+        "categories": cat_order,
+        "series": {cat: [yc[y][cat] for y in years] for cat in cat_order},
+    }
+
+    # ---- 年度 × 路線（堆疊）----
+    yr = {y: Counter() for y in years}
+    for c in cases:
+        yr[c["year"]][c["route"] or "未標"] += 1
+    route_order = [r for r, _ in by_route.most_common()]
+    year_route = {
+        "years": [str(y) for y in years],
+        "routes": route_order,
+        "series": {r: [yr[y][r] for y in years] for r in route_order},
+    }
+
     # ---- 精簡 cases 給前端（移除 photo_folder 之類大欄位）----
     slim_cases = []
     for c in cases:
@@ -157,6 +196,9 @@ def main():
              "defects_found": m.get("defects_found")}
             for m in patrol["monthly"]
         ],
+        "monthly_trend": monthly_trend,
+        "year_category": year_category,
+        "year_route": year_route,
     }
     (ASSETS / "charts.json").write_text(json.dumps(charts, ensure_ascii=False), encoding="utf-8")
 
