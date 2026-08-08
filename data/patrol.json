@@ -1,0 +1,3866 @@
+{
+ "generated": "115.08.07",
+ "source": "巡查日報表55個月(手寫掃描AI判讀)",
+ "monthly": [
+  {
+   "month": "110.11",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 10
+  },
+  {
+   "month": "110.12",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 12
+  },
+  {
+   "month": "111.01",
+   "weekdays": 21,
+   "patrol_days": 15,
+   "defects_found": 9
+  },
+  {
+   "month": "111.02",
+   "weekdays": 20,
+   "patrol_days": 20,
+   "defects_found": 7
+  },
+  {
+   "month": "111.03",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 16
+  },
+  {
+   "month": "111.04",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 12
+  },
+  {
+   "month": "111.05",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 16
+  },
+  {
+   "month": "111.06",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 12
+  },
+  {
+   "month": "111.09",
+   "weekdays": 22,
+   "patrol_days": 0,
+   "defects_found": 0
+  },
+  {
+   "month": "111.10",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 10
+  },
+  {
+   "month": "111.11",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 11
+  },
+  {
+   "month": "111.12",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 15
+  },
+  {
+   "month": "112.01",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "112.02",
+   "weekdays": 20,
+   "patrol_days": 20,
+   "defects_found": 10
+  },
+  {
+   "month": "112.03",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 14
+  },
+  {
+   "month": "112.04",
+   "weekdays": 20,
+   "patrol_days": 15,
+   "defects_found": 6
+  },
+  {
+   "month": "112.05",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 9
+  },
+  {
+   "month": "112.06",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "112.07",
+   "weekdays": 21,
+   "patrol_days": 16,
+   "defects_found": 5
+  },
+  {
+   "month": "112.08",
+   "weekdays": 23,
+   "patrol_days": 18,
+   "defects_found": 6
+  },
+  {
+   "month": "112.09",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 8
+  },
+  {
+   "month": "112.10",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 11
+  },
+  {
+   "month": "112.11",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "112.12",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 10
+  },
+  {
+   "month": "113.01",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 9
+  },
+  {
+   "month": "113.02",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 7
+  },
+  {
+   "month": "113.03",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 8
+  },
+  {
+   "month": "113.04",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "113.05",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 8
+  },
+  {
+   "month": "113.06",
+   "weekdays": 20,
+   "patrol_days": 20,
+   "defects_found": 8
+  },
+  {
+   "month": "113.07",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 10
+  },
+  {
+   "month": "113.08",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "113.09",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 7
+  },
+  {
+   "month": "113.10",
+   "weekdays": 23,
+   "patrol_days": 0,
+   "defects_found": 2
+  },
+  {
+   "month": "113.11",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 10
+  },
+  {
+   "month": "113.12",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 11
+  },
+  {
+   "month": "114.01",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 10
+  },
+  {
+   "month": "114.02",
+   "weekdays": 20,
+   "patrol_days": 20,
+   "defects_found": 10
+  },
+  {
+   "month": "114.03",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 10
+  },
+  {
+   "month": "114.04",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "114.05",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 10
+  },
+  {
+   "month": "114.06",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 8
+  },
+  {
+   "month": "114.07",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 10
+  },
+  {
+   "month": "114.08",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 8
+  },
+  {
+   "month": "114.09",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "114.10",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 10
+  },
+  {
+   "month": "114.11",
+   "weekdays": 20,
+   "patrol_days": 20,
+   "defects_found": 8
+  },
+  {
+   "month": "114.12",
+   "weekdays": 23,
+   "patrol_days": 23,
+   "defects_found": 9
+  },
+  {
+   "month": "115.01",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 8
+  },
+  {
+   "month": "115.02",
+   "weekdays": 20,
+   "patrol_days": 20,
+   "defects_found": 8
+  },
+  {
+   "month": "115.03",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "115.04",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "115.05",
+   "weekdays": 21,
+   "patrol_days": 21,
+   "defects_found": 8
+  },
+  {
+   "month": "115.06",
+   "weekdays": 22,
+   "patrol_days": 22,
+   "defects_found": 9
+  },
+  {
+   "month": "115.07",
+   "weekdays": 23,
+   "patrol_days": 18,
+   "defects_found": 8
+  }
+ ],
+ "defects": [
+  {
+   "month": "110.11",
+   "date": "11/1",
+   "location": "台3線38K~38K+300右側",
+   "issue": "上坡處有碎石",
+   "action": "派人清除"
+  },
+  {
+   "month": "110.11",
+   "date": "11/3",
+   "location": "台4線29K+900左側",
+   "issue": "車禍油漬",
+   "action": "派人清理"
+  },
+  {
+   "month": "110.11",
+   "date": "11/10",
+   "location": "台3線52K+750右側",
+   "issue": "泥土掉落",
+   "action": "派車鏟除、派人清理、灑水車清洗"
+  },
+  {
+   "month": "110.11",
+   "date": "11/11",
+   "location": "台3線37K+800左側",
+   "issue": "車禍油漬",
+   "action": "派拖車拖車輛、派人清理"
+  },
+  {
+   "month": "110.11",
+   "date": "11/19",
+   "location": "台4線38K+300~38K+500右側",
+   "issue": "有落石",
+   "action": "派人清除"
+  },
+  {
+   "month": "110.11",
+   "date": "11/22",
+   "location": "台3線37K+000右側",
+   "issue": "泥沙清除",
+   "action": "指派人員水車清潔"
+  },
+  {
+   "month": "110.11",
+   "date": "11/23",
+   "location": "台3線42K+600右側",
+   "issue": "樹木倒塌",
+   "action": "派挖土機清理樹木"
+  },
+  {
+   "month": "110.11",
+   "date": "11/24",
+   "location": "台3線50K+500~53K+400右側",
+   "issue": "路面淤泥",
+   "action": "派水車清洗淤泥"
+  },
+  {
+   "month": "110.11",
+   "date": "11/26",
+   "location": "台3線41K+300~41K+800右側",
+   "issue": "路面有油漬",
+   "action": "派水車清潔"
+  },
+  {
+   "month": "110.11",
+   "date": "11/29",
+   "location": "台4線37K+500~38K+200左側",
+   "issue": "橋路面黏著劑",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/1",
+   "location": "台3線38K~38K+300左側",
+   "issue": "路面淤泥",
+   "action": "指派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/2",
+   "location": "台3線49K+200~49K+700右側",
+   "issue": "路面淤泥",
+   "action": "指派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/3",
+   "location": "台4線30K+600右側",
+   "issue": "崁津大橋上有垃圾",
+   "action": "派人清除"
+  },
+  {
+   "month": "110.12",
+   "date": "12/8",
+   "location": "台4線28K+200右側",
+   "issue": "車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/10",
+   "location": "台3線41K+300右側",
+   "issue": "路面碎玻璃",
+   "action": "指派人清除"
+  },
+  {
+   "month": "110.12",
+   "date": "12/13",
+   "location": "台3乙線6K+800右側",
+   "issue": "路上有動物屍體",
+   "action": "派人清理乾淨"
+  },
+  {
+   "month": "110.12",
+   "date": "12/15",
+   "location": "台3乙線5K~6K+500左側",
+   "issue": "路面車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/17",
+   "location": "台3線41K+300左側",
+   "issue": "路上事故油漬清洗",
+   "action": "派水車清洗乾淨"
+  },
+  {
+   "month": "110.12",
+   "date": "12/21",
+   "location": "台4線32K+700右側",
+   "issue": "車禍事故路面有玻璃碎片",
+   "action": "派人清除"
+  },
+  {
+   "month": "110.12",
+   "date": "12/24",
+   "location": "台3線43K+800右側",
+   "issue": "路面淤泥",
+   "action": "指派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/28",
+   "location": "台3乙線3K+800左側",
+   "issue": "路面淤泥",
+   "action": "指派水車清洗"
+  },
+  {
+   "month": "110.12",
+   "date": "12/30",
+   "location": "台3線54K+100右側",
+   "issue": "路面有坑洞",
+   "action": "派人清除"
+  },
+  {
+   "month": "111.01",
+   "date": "1/12",
+   "location": "台3線50K+500~52K+200",
+   "issue": "路面淤泥",
+   "action": "指派水車清洗"
+  },
+  {
+   "month": "111.01",
+   "date": "1/12",
+   "location": "台3乙線12K+100",
+   "issue": "淤泥",
+   "action": "指派水車清洗"
+  },
+  {
+   "month": "111.01",
+   "date": "1/13",
+   "location": "台3線41K+500右側",
+   "issue": "路上有動物屍體",
+   "action": "派人清理"
+  },
+  {
+   "month": "111.01",
+   "date": "1/18",
+   "location": "台3線36K+800右側",
+   "issue": "路樹倒塌",
+   "action": "調派吊卡配合清除"
+  },
+  {
+   "month": "111.01",
+   "date": "1/19",
+   "location": "台3線34K+970",
+   "issue": "車禍油漬",
+   "action": "調派水車清洗"
+  },
+  {
+   "month": "111.01",
+   "date": "1/20",
+   "location": "台3線38K+930右側",
+   "issue": "蓋板破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.01",
+   "date": "1/25",
+   "location": "台3乙線10K+900左側",
+   "issue": "洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.01",
+   "date": "1/26",
+   "location": "台3線38~39K左側",
+   "issue": "落葉堆積",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.01",
+   "date": "1/27",
+   "location": "台3乙線7K+900左側",
+   "issue": "枯木垂落",
+   "action": "吊卡配合砍伐"
+  },
+  {
+   "month": "111.02",
+   "date": "2/7",
+   "location": "台3線37.9K左側",
+   "issue": "護欄污漬",
+   "action": "水車沖洗"
+  },
+  {
+   "month": "111.02",
+   "date": "2/9",
+   "location": "台3線44.5K左側",
+   "issue": "樹木倒塌",
+   "action": "調派吊卡配合移除"
+  },
+  {
+   "month": "111.02",
+   "date": "2/10",
+   "location": "台3線51.8K左側",
+   "issue": "枯木掉落",
+   "action": "吊卡配合移除"
+  },
+  {
+   "month": "111.02",
+   "date": "2/17",
+   "location": "台3線32.5K右側",
+   "issue": "落葉堆積",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.02",
+   "date": "2/21",
+   "location": "台4線30K右側",
+   "issue": "樹木倒塌",
+   "action": "調派挖土機前往移除"
+  },
+  {
+   "month": "111.02",
+   "date": "2/23",
+   "location": "武嶺橋",
+   "issue": "洩水孔堵塞",
+   "action": "派員疏通"
+  },
+  {
+   "month": "111.02",
+   "date": "2/24",
+   "location": "台3乙線9K+850右側",
+   "issue": "洩水孔長草",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.03",
+   "date": "3/1",
+   "location": "台3線36K+500左側",
+   "issue": "人行道破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.03",
+   "date": "3/2",
+   "location": "台4線37K+400左側",
+   "issue": "落葉覆蓋",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.03",
+   "date": "3/4",
+   "location": "台3線51K+400左側",
+   "issue": "清潔孔蓋板損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.03",
+   "date": "3/7",
+   "location": "台3線36K+500左側",
+   "issue": "洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.03",
+   "date": "3/8",
+   "location": "台3乙線7K+400右側",
+   "issue": "路面碎石",
+   "action": "立即清理"
+  },
+  {
+   "month": "111.03",
+   "date": "3/9",
+   "location": "台3線39K",
+   "issue": "中央分隔島洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.03",
+   "date": "3/10",
+   "location": "台4線29K",
+   "issue": "中央分隔島洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.03",
+   "date": "3/14",
+   "location": "台3乙線8K+500",
+   "issue": "中央分隔島洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.03",
+   "date": "3/15",
+   "location": "台3線52K",
+   "issue": "中央分隔島洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.03",
+   "date": "3/16",
+   "location": "台3線54K",
+   "issue": "中央分隔島洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.03",
+   "date": "3/18",
+   "location": "台4線溪州橋",
+   "issue": "洩水孔堵塞",
+   "action": "調派水車沖洗"
+  },
+  {
+   "month": "111.03",
+   "date": "3/21",
+   "location": "台3線32K+500左側",
+   "issue": "落葉堆積",
+   "action": "立即清理"
+  },
+  {
+   "month": "111.03",
+   "date": "3/22",
+   "location": "台3線39.5K左側",
+   "issue": "洩水孔長草",
+   "action": "立即割除"
+  },
+  {
+   "month": "111.03",
+   "date": "3/25",
+   "location": "台3線37K+805左側",
+   "issue": "護欄破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.03",
+   "date": "3/28",
+   "location": "台3線53K+450左側",
+   "issue": "樹木倒塌",
+   "action": "調派機具配合清理"
+  },
+  {
+   "month": "111.03",
+   "date": "3/31",
+   "location": "台3線39K+680左側",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.04",
+   "date": "4/1",
+   "location": "台3線57.2K~5?.4K",
+   "issue": "路面淤泥散落",
+   "action": "調派水車沖洗"
+  },
+  {
+   "month": "111.04",
+   "date": "4/4",
+   "location": "台4線39.2K",
+   "issue": "車禍油漬",
+   "action": "調派水車沖洗"
+  },
+  {
+   "month": "111.04",
+   "date": "4/7",
+   "location": "台3線36.6K右側",
+   "issue": "樹枝遮蔽標誌牌",
+   "action": "吊卡配合砍伐清理"
+  },
+  {
+   "month": "111.04",
+   "date": "4/14",
+   "location": "台3線武嶺橋",
+   "issue": "洩水孔堵塞",
+   "action": "調派水車配合疏通"
+  },
+  {
+   "month": "111.04",
+   "date": "4/15",
+   "location": "台3線55K左側",
+   "issue": "落葉堆積",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.04",
+   "date": "4/19",
+   "location": "台3乙線10K右",
+   "issue": "枯枝垂落",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.04",
+   "date": "4/21",
+   "location": "台3乙線5K~6K",
+   "issue": "落葉覆蓋蓋板",
+   "action": "立即清理"
+  },
+  {
+   "month": "111.04",
+   "date": "4/22",
+   "location": "台3線武嶺橋橋頭",
+   "issue": "路面油漬",
+   "action": "調派水車沖洗"
+  },
+  {
+   "month": "111.04",
+   "date": "4/26",
+   "location": "台4線34K左側",
+   "issue": "樹木已碰到電線",
+   "action": "吊卡配合砍伐"
+  },
+  {
+   "month": "111.04",
+   "date": "4/27",
+   "location": "台3乙線9K+5?0左側",
+   "issue": "路面有動物屍體",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.04",
+   "date": "4/28",
+   "location": "台4線37K+700右側",
+   "issue": "清潔孔長草",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.04",
+   "date": "4/29",
+   "location": "台3乙線8K",
+   "issue": "清潔孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.05",
+   "date": "5/3",
+   "location": "台3線50K+580",
+   "issue": "樹木遮蔽標誌牌",
+   "action": "吊卡配合砍伐清理"
+  },
+  {
+   "month": "111.05",
+   "date": "5/4",
+   "location": "台3線50.5K",
+   "issue": "蓋版破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.05",
+   "date": "5/6",
+   "location": "台3乙線3.9K",
+   "issue": "動物屍體",
+   "action": "派員清除"
+  },
+  {
+   "month": "111.05",
+   "date": "5/10",
+   "location": "台3乙線6K+850~950",
+   "issue": "暗溝淤積",
+   "action": "調派水車配合清理"
+  },
+  {
+   "month": "111.05",
+   "date": "5/11",
+   "location": "台3線員林路石園路口",
+   "issue": "意外事故泥巴掉落",
+   "action": "立即派員清理"
+  },
+  {
+   "month": "111.05",
+   "date": "5/12",
+   "location": "台4線32K左側",
+   "issue": "洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.05",
+   "date": "5/13",
+   "location": "台4線29K左側",
+   "issue": "蓋版雜草覆蓋",
+   "action": "立即清除"
+  },
+  {
+   "month": "111.05",
+   "date": "5/17",
+   "location": "崁津橋",
+   "issue": "洩水孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.05",
+   "date": "5/18",
+   "location": "台4線34K右側",
+   "issue": "蓋版積土",
+   "action": "立即清理"
+  },
+  {
+   "month": "111.05",
+   "date": "5/19",
+   "location": "台4線38K",
+   "issue": "清潔孔堵塞",
+   "action": "立即疏通"
+  },
+  {
+   "month": "111.05",
+   "date": "5/24",
+   "location": "台3線武嶺橋",
+   "issue": "洩水孔堵塞積水",
+   "action": "派員疏通"
+  },
+  {
+   "month": "111.05",
+   "date": "5/25",
+   "location": "台3乙線6K+500",
+   "issue": "槽化島積土",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.05",
+   "date": "5/26",
+   "location": "台3線50K~52K",
+   "issue": "雜草過高",
+   "action": "派員割除"
+  },
+  {
+   "month": "111.05",
+   "date": "5/27",
+   "location": "台3乙線2K左側",
+   "issue": "樹木遮蔽標誌牌",
+   "action": "派員砍伐"
+  },
+  {
+   "month": "111.05",
+   "date": "5/30",
+   "location": "台3乙線5K",
+   "issue": "樹木遮蔽標誌牌面",
+   "action": "吊卡配合砍伐"
+  },
+  {
+   "month": "111.05",
+   "date": "5/31",
+   "location": "台3乙線5.7K右側",
+   "issue": "蓋版破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.06",
+   "date": "6/1",
+   "location": "台3乙線5K+300~5K+500右側",
+   "issue": "樹木傾倒",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.06",
+   "date": "6/2",
+   "location": "崁津橋",
+   "issue": "伸縮縫清洗",
+   "action": "派員清洗"
+  },
+  {
+   "month": "111.06",
+   "date": "6/3",
+   "location": "台4線31K+300左側",
+   "issue": "樹木傾倒",
+   "action": "派員砍伐"
+  },
+  {
+   "month": "111.06",
+   "date": "6/6",
+   "location": "台4線介壽路1243~1253號",
+   "issue": "路面砂石",
+   "action": "水車清洗"
+  },
+  {
+   "month": "111.06",
+   "date": "6/9",
+   "location": "崁津橋",
+   "issue": "散落物",
+   "action": "派員清除"
+  },
+  {
+   "month": "111.06",
+   "date": "6/13",
+   "location": "台3線36K+900右側",
+   "issue": "輪胎皮",
+   "action": "派員清除"
+  },
+  {
+   "month": "111.06",
+   "date": "6/14",
+   "location": "台3線49K+000左側",
+   "issue": "路面泥土清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.06",
+   "date": "6/15",
+   "location": "台3線中?路上林段?號",
+   "issue": "清除路面油漬",
+   "action": "派員清除"
+  },
+  {
+   "month": "111.06",
+   "date": "6/17",
+   "location": "台3乙線文化路537-1號",
+   "issue": "路面碎石清除",
+   "action": "派員清除"
+  },
+  {
+   "month": "111.06",
+   "date": "6/22",
+   "location": "台3線37K~38K左側",
+   "issue": "清理水溝路面",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.06",
+   "date": "6/23",
+   "location": "台3線39K+400右側",
+   "issue": "路面下陷掏空",
+   "action": "派員修復"
+  },
+  {
+   "month": "111.06",
+   "date": "6/27",
+   "location": "台3乙線7K",
+   "issue": "清理水溝",
+   "action": "派水車清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/3",
+   "location": "台4線34K+200右側",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/5",
+   "location": "台3乙線1K+900",
+   "issue": "路樹倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/10",
+   "location": "台3乙線7K+500右側",
+   "issue": "車輛油漬?",
+   "action": "水車清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/11",
+   "location": "台3線?8K+600左側",
+   "issue": "路面輪胎皮",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/14",
+   "location": "台4線35K+500",
+   "issue": "路面壓克力?",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/17",
+   "location": "台4線29K+920右側",
+   "issue": "樹木倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/18",
+   "location": "台3乙線5K+250右側",
+   "issue": "樹木倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/19",
+   "location": "台4線?2K+200",
+   "issue": "路面泥土",
+   "action": "水車清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/26",
+   "location": "台3線37K+050右側",
+   "issue": "路面安全帽",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.10",
+   "date": "10/27",
+   "location": "台4線瑞安路一段路口?",
+   "issue": "路面玻璃",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.11",
+   "date": "11/3",
+   "location": "台4線3?K+500",
+   "issue": "洩水孔清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.11",
+   "date": "11/4",
+   "location": "台3乙線3K+200右側",
+   "issue": "樹木倒塌",
+   "action": "派員移除"
+  },
+  {
+   "month": "111.11",
+   "date": "11/8",
+   "location": "崁津橋?",
+   "issue": "伸縮縫?污",
+   "action": "派員清洗"
+  },
+  {
+   "month": "111.11",
+   "date": "11/11",
+   "location": "溪州橋",
+   "issue": "洩水孔清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.11",
+   "date": "11/17",
+   "location": "台3線34K+000?",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.11",
+   "date": "11/18",
+   "location": "台4線??至台3線?林路",
+   "issue": "路面泥土",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.11",
+   "date": "11/21",
+   "location": "武嶺橋",
+   "issue": "路面散落物",
+   "action": "派員處理"
+  },
+  {
+   "month": "111.11",
+   "date": "11/23",
+   "location": "台3乙線5K+000?",
+   "issue": "路面?掉落",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.11",
+   "date": "11/28",
+   "location": "台3乙線5K+500",
+   "issue": "路面泥巴",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.11",
+   "date": "11/29",
+   "location": "台4線32K+000",
+   "issue": "樹木遮蔽",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.11",
+   "date": "11/30",
+   "location": "台4線35K+400",
+   "issue": "樹木倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/1",
+   "location": "台3線40K+400左側",
+   "issue": "路面碎石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.12",
+   "date": "12/6",
+   "location": "台3線35K+300左側",
+   "issue": "路面碎石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.12",
+   "date": "12/8",
+   "location": "台4線瑞安路一段268號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.12",
+   "date": "12/9",
+   "location": "台4線29K+900右側",
+   "issue": "樹木傾倒?",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/12",
+   "location": "台3乙線5K+500右側",
+   "issue": "竹子傾倒?",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/13",
+   "location": "台3乙線10K+600左側",
+   "issue": "掉落物清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/14",
+   "location": "台4線35K+400左側",
+   "issue": "枯木傾倒?",
+   "action": "派員清理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/15",
+   "location": "台3線38K+000",
+   "issue": "車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.12",
+   "date": "12/16",
+   "location": "台4線觀音亭?",
+   "issue": "路面污泥",
+   "action": "派水車清理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/19",
+   "location": "台4線信義路66?號",
+   "issue": "車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.12",
+   "date": "12/20",
+   "location": "台3線38K+50?左側",
+   "issue": "枯木傾倒?",
+   "action": "派員處理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/21",
+   "location": "台4線康莊路?段637號",
+   "issue": "路樹傾倒",
+   "action": "派員處理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/23",
+   "location": "台3線53K+050",
+   "issue": "掉落物清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "111.12",
+   "date": "12/26",
+   "location": "台3線39K-41K左側",
+   "issue": "路面泥土清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "111.12",
+   "date": "12/29",
+   "location": "台?線康莊路?段6?號",
+   "issue": "路面泥土",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.01",
+   "date": "1/2",
+   "location": "台3線37K+000",
+   "issue": "散落物?",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.01",
+   "date": "1/3",
+   "location": "台3線55K+150左側",
+   "issue": "貓屍體",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.01",
+   "date": "1/10",
+   "location": "台3線員林路一段789號",
+   "issue": "路邊垃圾清理",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.01",
+   "date": "1/12",
+   "location": "台3乙線5K+4?0~5K+?50",
+   "issue": "路面淤泥",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.01",
+   "date": "1/16",
+   "location": "台3線32K+240右側",
+   "issue": "清潔孔損壞",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.01",
+   "date": "1/17",
+   "location": "台3線32K+150左側",
+   "issue": "路面砂石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.01",
+   "date": "1/25",
+   "location": "台3線33K+100",
+   "issue": "竹木垂落移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.01",
+   "date": "1/27",
+   "location": "員林路五段3?號",
+   "issue": "鐵管外露",
+   "action": "派員切除"
+  },
+  {
+   "month": "112.01",
+   "date": "1/30",
+   "location": "台3線40K+800左側",
+   "issue": "狗屍體",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/1",
+   "location": "台3線43K+200",
+   "issue": "坍坡清降?",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/2",
+   "location": "台4線35K~36K+400",
+   "issue": "路面砂石清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.02",
+   "date": "2/7",
+   "location": "台3乙線7K+500",
+   "issue": "路面泥巴清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.02",
+   "date": "2/9",
+   "location": "台3乙線1K+100右側",
+   "issue": "路樹修剪",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/13",
+   "location": "台3線50K+700",
+   "issue": "路面砂石清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.02",
+   "date": "2/16",
+   "location": "台3線34K+700右側",
+   "issue": "枯木砍伐清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/20",
+   "location": "台3線38K+200左側",
+   "issue": "樹枝掉落清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/21",
+   "location": "台3乙線8K+500右側",
+   "issue": "鐵條清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/27",
+   "location": "台3乙線9K+600右側",
+   "issue": "格柵損壞修復",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.02",
+   "date": "2/28",
+   "location": "台3乙線7K+500",
+   "issue": "土石清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.03",
+   "date": "3/1",
+   "location": "台3線38K+500",
+   "issue": "路殺清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/6",
+   "location": "台3線41K+000",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.03",
+   "date": "3/7",
+   "location": "台3乙線7K+600右側",
+   "issue": "路面鐵管切除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/8",
+   "location": "台4線37K+250右側",
+   "issue": "路殺清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/9",
+   "location": "台3乙線8K+400右側",
+   "issue": "清潔孔損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "112.03",
+   "date": "3/13",
+   "location": "台3線35K+200左側",
+   "issue": "清潔孔損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "112.03",
+   "date": "3/14",
+   "location": "台3線37K+800右側",
+   "issue": "路面碎石清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/15",
+   "location": "台4線31K+000",
+   "issue": "路面泥沙",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.03",
+   "date": "3/20",
+   "location": "台4線34K+200右側",
+   "issue": "路面砂石清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.03",
+   "date": "3/23",
+   "location": "台4線37K+300左側",
+   "issue": "清潔孔損壞",
+   "action": "派人修復"
+  },
+  {
+   "month": "112.03",
+   "date": "3/24",
+   "location": "台4線31K+201左側",
+   "issue": "樹木移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/27",
+   "location": "台3線51K+930",
+   "issue": "護欄缺?改善",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/28",
+   "location": "台4線29K+930左側",
+   "issue": "鋼筋外露",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.03",
+   "date": "3/30",
+   "location": "台3線武嶺橋",
+   "issue": "洩水孔清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.04",
+   "date": "4/12",
+   "location": "台4線35K+380左側",
+   "issue": "樹木倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.04",
+   "date": "4/13",
+   "location": "中興路926號",
+   "issue": "人行道損壞",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.04",
+   "date": "4/17",
+   "location": "台4線35K+250右側",
+   "issue": "護欄破損",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.04",
+   "date": "4/18",
+   "location": "台3線35K+400右側",
+   "issue": "路面砂石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.04",
+   "date": "4/20",
+   "location": "台3乙線1K+500左側",
+   "issue": "路面泥土",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.04",
+   "date": "4/27",
+   "location": "台4線35K+465右側",
+   "issue": "鋼筋外露",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.05",
+   "date": "5/2",
+   "location": "台3乙線2K+600右側",
+   "issue": "竹子移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.05",
+   "date": "5/3",
+   "location": "台3線43K+050",
+   "issue": "?溝石頭清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.05",
+   "date": "5/5",
+   "location": "台4線28K+100",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.05",
+   "date": "5/10",
+   "location": "台3線41K+250",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.05",
+   "date": "5/12",
+   "location": "台3線35K+000左側",
+   "issue": "油漬清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.05",
+   "date": "5/19",
+   "location": "台4線康莊路3段218號?",
+   "issue": "垃圾清理",
+   "action": "派水車及人員清理"
+  },
+  {
+   "month": "112.05",
+   "date": "5/22",
+   "location": "台3乙線9K+100左側",
+   "issue": "清潔孔損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "112.05",
+   "date": "5/24",
+   "location": "台3線34K+050右側",
+   "issue": "竹子移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.05",
+   "date": "5/30",
+   "location": "台3乙線2K+800",
+   "issue": "竹子移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.06",
+   "date": "6/1",
+   "location": "台3線51K+400右側",
+   "issue": "路面泥土",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.06",
+   "date": "6/2",
+   "location": "台3乙線6K+0?0左側",
+   "issue": "掉落樹枝",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.06",
+   "date": "6/13",
+   "location": "台4線39K+150",
+   "issue": "路面砂?清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.06",
+   "date": "6/14",
+   "location": "台3乙線9K+540",
+   "issue": "枯樹雜草清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.06",
+   "date": "6/16",
+   "location": "台3線53K+245右側",
+   "issue": "清潔孔損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "112.06",
+   "date": "6/19",
+   "location": "台4線35K+600左側",
+   "issue": "竹子倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.06",
+   "date": "6/20",
+   "location": "台4線44K+800右側",
+   "issue": "樹?掉落",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.06",
+   "date": "6/26",
+   "location": "台3乙線0K+800",
+   "issue": "樹木遮蔽牌面",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.06",
+   "date": "6/27",
+   "location": "台3線38K+900右側",
+   "issue": "路面油漬",
+   "action": "派水車清理"
+  },
+  {
+   "month": "112.07",
+   "date": "7/11",
+   "location": "台4線35K+900左側",
+   "issue": "樹木傾倒?",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.07",
+   "date": "7/14",
+   "location": "台4線35K+500",
+   "issue": "路旁死犬?",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.07",
+   "date": "7/20",
+   "location": "台3乙線6K+500",
+   "issue": "樹木傾倒?",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.07",
+   "date": "7/27",
+   "location": "台3乙線8K+800",
+   "issue": "水溝淤泥?",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.07",
+   "date": "7/28",
+   "location": "台4線28K+700",
+   "issue": "路面砂石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.08",
+   "date": "8/10",
+   "location": "台3線42K+500",
+   "issue": "沿路水泥?",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.08",
+   "date": "8/11",
+   "location": "台4線35K+450左側",
+   "issue": "土石滑落?",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.08",
+   "date": "8/18",
+   "location": "台4線32K+100",
+   "issue": "事故油漬清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.08",
+   "date": "8/22",
+   "location": "台3線33K+700",
+   "issue": "樹木倒塌清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.08",
+   "date": "8/28",
+   "location": "台3乙線5K+200",
+   "issue": "竹子倒塌移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.08",
+   "date": "8/30",
+   "location": "台3乙線0K+180",
+   "issue": "路面泥沙清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.09",
+   "date": "9/1",
+   "location": "台3線54K+950右側",
+   "issue": "水溝淤積",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.09",
+   "date": "9/4",
+   "location": "台3乙線10K+100右側",
+   "issue": "竹子倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.09",
+   "date": "9/7",
+   "location": "台3線31K+100",
+   "issue": "土石流",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.09",
+   "date": "9/8",
+   "location": "台4線28K+500右側",
+   "issue": "集水井淤積",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.09",
+   "date": "9/14",
+   "location": "台4線36K+600右側",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.09",
+   "date": "9/18",
+   "location": "台3線38K+000",
+   "issue": "路面淤泥",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.09",
+   "date": "9/19",
+   "location": "台3線37K+800",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.09",
+   "date": "9/26",
+   "location": "台4線35K+500右側",
+   "issue": "竹子倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/2",
+   "location": "台3乙線7K+250右側",
+   "issue": "樹木倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/5",
+   "location": "台3線44K+150右側",
+   "issue": "樹木移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/6",
+   "location": "台3線38K+900",
+   "issue": "車禍事故雜物",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/10",
+   "location": "台4線康莊路三段",
+   "issue": "號誌桿傾倒",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/11",
+   "location": "台4線36K+300右側",
+   "issue": "竹子倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/12",
+   "location": "台4線5?K+430右側",
+   "issue": "鋼?護欄撞壞",
+   "action": "派員拆除"
+  },
+  {
+   "month": "112.10",
+   "date": "10/13",
+   "location": "台4線28K+900右側",
+   "issue": "事故油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.10",
+   "date": "10/16",
+   "location": "台4線33K+600左側",
+   "issue": "竹子倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/20",
+   "location": "台4線35K+600左側",
+   "issue": "鋼筋外露",
+   "action": "派員切除"
+  },
+  {
+   "month": "112.10",
+   "date": "10/24",
+   "location": "台3線42K+700左側",
+   "issue": "樹木遮蔽?枝",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.10",
+   "date": "10/27",
+   "location": "台3線武嶺橋",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "112.11",
+   "date": "11/6",
+   "location": "台4線33K+250右側",
+   "issue": "磚塊木頭清除",
+   "action": "派員清除"
+  },
+  {
+   "month": "112.11",
+   "date": "11/7",
+   "location": "台3線43K+1700右側",
+   "issue": "廢棄物清除",
+   "action": "派員清除"
+  },
+  {
+   "month": "112.11",
+   "date": "11/8",
+   "location": "台4線33K+320右側",
+   "issue": "鋼筋外露",
+   "action": "派員切除"
+  },
+  {
+   "month": "112.11",
+   "date": "11/9",
+   "location": "台3乙線6K+280右側",
+   "issue": "標線突起物",
+   "action": "派員清除"
+  },
+  {
+   "month": "112.11",
+   "date": "11/13",
+   "location": "台3線45K+010右側",
+   "issue": "增設清潔孔",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.11",
+   "date": "11/14",
+   "location": "台3線51K+330",
+   "issue": "設置鋼板護欄",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.11",
+   "date": "11/17",
+   "location": "台4線30K+850左側",
+   "issue": "違規大型看板拆除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.11",
+   "date": "11/23",
+   "location": "台3線48K+350右側",
+   "issue": "竹子倒塌砍伐",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.11",
+   "date": "11/28",
+   "location": "台3乙線11K+030右側",
+   "issue": "圍籬傾倒處理",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.12",
+   "date": "12/5",
+   "location": "台4線32K+195右側",
+   "issue": "清潔孔損壞",
+   "action": "派員處理修復"
+  },
+  {
+   "month": "112.12",
+   "date": "12/11",
+   "location": "台3線30K+600右側",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.12",
+   "date": "12/13",
+   "location": "台4線26K+900右側",
+   "issue": "截水溝損壞?",
+   "action": "派員處理修復"
+  },
+  {
+   "month": "112.12",
+   "date": "12/15",
+   "location": "台3線37K+900",
+   "issue": "地面排水槽安裝",
+   "action": "派員安裝"
+  },
+  {
+   "month": "112.12",
+   "date": "12/18",
+   "location": "台4線康莊路5段950號",
+   "issue": "路面泥沙清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.12",
+   "date": "12/19",
+   "location": "台3線55K+130右側",
+   "issue": "樹木倒塌清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.12",
+   "date": "12/25",
+   "location": "台3線37K+000",
+   "issue": "路面油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.12",
+   "date": "12/26",
+   "location": "台3線39K+060",
+   "issue": "路面油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "112.12",
+   "date": "12/27",
+   "location": "台3線37K+200右側",
+   "issue": "孔蓋突起",
+   "action": "派員處理"
+  },
+  {
+   "month": "112.12",
+   "date": "12/29",
+   "location": "台3線38K+400左側",
+   "issue": "路殺",
+   "action": "派員處理?"
+  },
+  {
+   "month": "113.01",
+   "date": "1/1",
+   "location": "台3線44K+600左側",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.01",
+   "date": "1/2",
+   "location": "台4線30K+900左側",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.01",
+   "date": "1/9",
+   "location": "台3乙線8K+800",
+   "issue": "路面碎石",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.01",
+   "date": "1/10",
+   "location": "台3線44K+7?0左側",
+   "issue": "路樹倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.01",
+   "date": "1/15",
+   "location": "台4線28K+920左側",
+   "issue": "車禍事故清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.01",
+   "date": "1/18",
+   "location": "台3線33K+360右側",
+   "issue": "高大樹木傾倒",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.01",
+   "date": "1/25",
+   "location": "台3線39K+100左側",
+   "issue": "路面泥濘清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.01",
+   "date": "1/26",
+   "location": "台3線41K+250右側",
+   "issue": "路面油漬清理",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.01",
+   "date": "1/29",
+   "location": "台3乙線7K+300?",
+   "issue": "路面油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.02",
+   "date": "2/5",
+   "location": "台3線38K+800右側",
+   "issue": "掉落物",
+   "action": "派員清除"
+  },
+  {
+   "month": "113.02",
+   "date": "2/7",
+   "location": "台4線信義路1175號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.02",
+   "date": "2/14",
+   "location": "台3乙線8K+500左側",
+   "issue": "路面樹葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.02",
+   "date": "2/19",
+   "location": "台3乙線10K+500",
+   "issue": "路面樹葉清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.02",
+   "date": "2/22",
+   "location": "台3乙線11K+300左側",
+   "issue": "木板清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.02",
+   "date": "2/27",
+   "location": "台3線37K+800右側",
+   "issue": "路面碎石清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.02",
+   "date": "2/29",
+   "location": "台3乙線6K+900",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.03",
+   "date": "3/5",
+   "location": "台3線53K+400",
+   "issue": "路面碎石清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.03",
+   "date": "3/8",
+   "location": "台4線37K+300",
+   "issue": "路殺",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.03",
+   "date": "3/11",
+   "location": "台3線38K+000",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.03",
+   "date": "3/12",
+   "location": "台3線37K+000右側",
+   "issue": "樹木倒塌移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.03",
+   "date": "3/18",
+   "location": "台3乙線10K+550",
+   "issue": "路殺",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.03",
+   "date": "3/20",
+   "location": "台3線37K+800",
+   "issue": "樹枝移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.03",
+   "date": "3/22",
+   "location": "台4線38K+460右側",
+   "issue": "樹木移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.03",
+   "date": "3/25",
+   "location": "台3乙線5K+900",
+   "issue": "纜線垂落處理",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/2",
+   "location": "台4線34K+100左側",
+   "issue": "路面泥土清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.04",
+   "date": "4/5",
+   "location": "台3線52K+800",
+   "issue": "樹枝墜落",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/9",
+   "location": "台4線30K+500",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/10",
+   "location": "台3線52K+420",
+   "issue": "高大危木砍伐",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/17",
+   "location": "台4線32K+700",
+   "issue": "樹倒移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/18",
+   "location": "台3線36K+900",
+   "issue": "積水處理",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/22",
+   "location": "台3乙線11K+800",
+   "issue": "積水改善",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.04",
+   "date": "4/23",
+   "location": "台3線36K+900",
+   "issue": "洩水孔疏清",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.04",
+   "date": "4/24",
+   "location": "台3線36K+900",
+   "issue": "積水處理",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/3",
+   "location": "台3線53K+400",
+   "issue": "樹木遮蔽告示牌",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/6",
+   "location": "台3線44K+450",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/10",
+   "location": "台3乙線10K+050右側",
+   "issue": "垂落竹子移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/13",
+   "location": "台3線37K+600",
+   "issue": "路面油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.05",
+   "date": "5/17",
+   "location": "台3線54K+750",
+   "issue": "明溝清洗",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/23",
+   "location": "台4線33K+450",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/27",
+   "location": "台4線38K+450",
+   "issue": "水溝雜草清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.05",
+   "date": "5/29",
+   "location": "台4線38K+200",
+   "issue": "路面油漬清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.06",
+   "date": "6/3",
+   "location": "台3乙線7K+900",
+   "issue": "號誌牌遮蔽",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.06",
+   "date": "6/7",
+   "location": "台3線54K+800",
+   "issue": "水溝淤積清洗",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.06",
+   "date": "6/11",
+   "location": "台3乙線5K+550右側",
+   "issue": "樹木垂落清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.06",
+   "date": "6/12",
+   "location": "台3線37K+800",
+   "issue": "清除碎石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.06",
+   "date": "6/13",
+   "location": "台3線43K+600",
+   "issue": "清除砂石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.06",
+   "date": "6/19",
+   "location": "台4線35K+000",
+   "issue": "樹木倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.06",
+   "date": "6/26",
+   "location": "台3線37K+400",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.06",
+   "date": "6/28",
+   "location": "台3線37K+150",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/1",
+   "location": "台4線39K+050",
+   "issue": "竹雜物砍伐清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/2",
+   "location": "台4線30K+500",
+   "issue": "防撞桿清除?",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/4",
+   "location": "台3線32K+500",
+   "issue": "樹木倒塌清除",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/5",
+   "location": "台4線40K+600",
+   "issue": "路面碎石清除",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.07",
+   "date": "7/8",
+   "location": "台3線34K+600",
+   "issue": "掉落物",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/11",
+   "location": "台3乙線10K+100",
+   "issue": "竹子移除?",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/18",
+   "location": "台3線員林路?段159號?",
+   "issue": "砂石清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.07",
+   "date": "7/24",
+   "location": "台3線31K+400",
+   "issue": "車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.07",
+   "date": "7/26",
+   "location": "台3線42K+100",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.07",
+   "date": "7/30",
+   "location": "台3線38K+460",
+   "issue": "樹木傾倒移除?",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.08",
+   "date": "8/5",
+   "location": "台3線員林路二段155巷",
+   "issue": "油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.08",
+   "date": "8/6",
+   "location": "台3線員林路二段2?8號",
+   "issue": "油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.08",
+   "date": "8/8",
+   "location": "台3線40K+300",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.08",
+   "date": "8/9",
+   "location": "台3乙線1K+900",
+   "issue": "車禍清除",
+   "action": "派員清除"
+  },
+  {
+   "month": "113.08",
+   "date": "8/15",
+   "location": "台3乙線7K+910?",
+   "issue": "暗溝清淤",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.08",
+   "date": "8/19",
+   "location": "台3乙線9K+560",
+   "issue": "土石清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.08",
+   "date": "8/26",
+   "location": "台3乙線2K+070",
+   "issue": "樹木遮蔽護欄",
+   "action": "派員清除"
+  },
+  {
+   "month": "113.08",
+   "date": "8/27",
+   "location": "台3線45K+750",
+   "issue": "路面油漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.08",
+   "date": "8/29",
+   "location": "台3乙線9K+200",
+   "issue": "擋土牆雜草",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.09",
+   "date": "9/4",
+   "location": "台3線31K+400",
+   "issue": "碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.09",
+   "date": "9/9",
+   "location": "台3線34K+600",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.09",
+   "date": "9/11",
+   "location": "台3乙線9K+300",
+   "issue": "清除路面樹葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.09",
+   "date": "9/17",
+   "location": "台3線30K+800",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.09",
+   "date": "9/19",
+   "location": "台3乙線4.5K+400?",
+   "issue": "路旁雜草?",
+   "action": "派員割除?"
+  },
+  {
+   "month": "113.09",
+   "date": "9/23",
+   "location": "台3線34K+300",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.09",
+   "date": "9/26",
+   "location": "台4線康莊路?段632號",
+   "issue": "路面碎玻璃",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.10",
+   "date": "10/14",
+   "location": "台3乙線8K+200",
+   "issue": "路殺(松鼠)",
+   "action": "通報"
+  },
+  {
+   "month": "113.10",
+   "date": "10/22",
+   "location": "台3乙線5K+800",
+   "issue": "路殺(松鼠)",
+   "action": "通報"
+  },
+  {
+   "month": "113.11",
+   "date": "11/4",
+   "location": "台3線37K+950",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/6",
+   "location": "台3線中央分隔島?",
+   "issue": "積土落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/8",
+   "location": "台3線36K+000",
+   "issue": "路肩積土",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/13",
+   "location": "台3線38K+000",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.11",
+   "date": "11/15",
+   "location": "台3線36K+000",
+   "issue": "路肩積土",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/19",
+   "location": "台3線37K+800",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.11",
+   "date": "11/21",
+   "location": "台3乙線12K+100",
+   "issue": "碎石清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/26",
+   "location": "台3乙線9K+100",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/27",
+   "location": "台3線37K+050",
+   "issue": "洩水孔清疏",
+   "action": "派水車清理"
+  },
+  {
+   "month": "113.11",
+   "date": "11/29",
+   "location": "台3乙線2K+100",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/2",
+   "location": "台3乙線2K+000",
+   "issue": "樹木遮蔽號誌",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/3",
+   "location": "台4線29K+000",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/4",
+   "location": "台3乙線2K+000",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.12",
+   "date": "12/5",
+   "location": "台4線30K+700",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/12",
+   "location": "台3線37K+300",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/13",
+   "location": "台3線34K+000",
+   "issue": "路肩積土?",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/18",
+   "location": "台3線52K+900",
+   "issue": "路殺",
+   "action": ""
+  },
+  {
+   "month": "113.12",
+   "date": "12/20",
+   "location": "台3線41K+200",
+   "issue": "溝蓋破損",
+   "action": ""
+  },
+  {
+   "month": "113.12",
+   "date": "12/25",
+   "location": "台3線3?K+450",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "113.12",
+   "date": "12/27",
+   "location": "台3乙線11K+710?",
+   "issue": "路肩除草",
+   "action": "派員清理"
+  },
+  {
+   "month": "113.12",
+   "date": "12/31",
+   "location": "台3線37K+300",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/2",
+   "location": "台4線27K+350",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/7",
+   "location": "台3乙線4K+950",
+   "issue": "格柵損壞",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/9",
+   "location": "台4線31K+400",
+   "issue": "排水溝清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.01",
+   "date": "1/14",
+   "location": "台3線41K+300",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.01",
+   "date": "1/15",
+   "location": "台3線41K+900",
+   "issue": "掉落物",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/17",
+   "location": "台4線31K+900",
+   "issue": "攝像頭遮蔽",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/20",
+   "location": "台3乙線1K+500",
+   "issue": "溝蓋損壞",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/22",
+   "location": "台3線38K+200",
+   "issue": "掉落物",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.01",
+   "date": "1/23",
+   "location": "員樹路二段400號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.01",
+   "date": "1/29",
+   "location": "台4線29K+200",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.02",
+   "date": "2/5",
+   "location": "台3線42K+400",
+   "issue": "路旁落葉?",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.02",
+   "date": "2/6",
+   "location": "台3乙線9K+600?",
+   "issue": "路旁雜草?",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.02",
+   "date": "2/7",
+   "location": "台3線36K+400?",
+   "issue": "路旁樹葉?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.02",
+   "date": "2/10",
+   "location": "台3乙線2K+500",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.02",
+   "date": "2/12",
+   "location": "中興路?404號?",
+   "issue": "水溝蓋損壞?",
+   "action": "派員修復"
+  },
+  {
+   "month": "114.02",
+   "date": "2/14",
+   "location": "台3線41K+800",
+   "issue": "格柵損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "114.02",
+   "date": "2/20",
+   "location": "台4線32K+600?",
+   "issue": "路面雜草?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.02",
+   "date": "2/21",
+   "location": "台3線31K+500?",
+   "issue": "路肩樹葉?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.02",
+   "date": "2/24",
+   "location": "台4線27K+400",
+   "issue": "車禍路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.02",
+   "date": "2/28",
+   "location": "台3乙線8K+200",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.03",
+   "date": "3/5",
+   "location": "台3線3?K+400",
+   "issue": "路肩積土",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.03",
+   "date": "3/7",
+   "location": "台3線45K+900",
+   "issue": "路肩樹葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.03",
+   "date": "3/11",
+   "location": "台3線43K+600",
+   "issue": "雜物?落",
+   "action": "派員移除?"
+  },
+  {
+   "month": "114.03",
+   "date": "3/12",
+   "location": "台3線31K+750",
+   "issue": "路面油漬",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.03",
+   "date": "3/14",
+   "location": "台3線37K+560",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.03",
+   "date": "3/17",
+   "location": "台3乙線康莊路?",
+   "issue": "掉落物清除?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.03",
+   "date": "3/20",
+   "location": "台3線32K+600",
+   "issue": "路肩樹葉",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.03",
+   "date": "3/25",
+   "location": "台3線54K+400?",
+   "issue": "邊坡雜草",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.03",
+   "date": "3/27",
+   "location": "台4線36K+750",
+   "issue": "車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.03",
+   "date": "3/28",
+   "location": "台3線31K+850",
+   "issue": "路面碎石",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.04",
+   "date": "4/2",
+   "location": "台3線36K+500",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/7",
+   "location": "台4線32K+700?",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/10",
+   "location": "台3線44K+450右側",
+   "issue": "樹遮蔽號誌",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/14",
+   "location": "台3乙線0K+600",
+   "issue": "路殺?",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/17",
+   "location": "台4線溪州橋下",
+   "issue": "清理雜物",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/21",
+   "location": "台3線36K+200?",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/25",
+   "location": "台3線44K+500右側",
+   "issue": "掉落物",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/28",
+   "location": "台3線員樹林號誌?1號",
+   "issue": "路面沙石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.04",
+   "date": "4/30",
+   "location": "台3線32K+?00",
+   "issue": "動物遺體?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/2",
+   "location": "台3線武嶺橋",
+   "issue": "清碎石?",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.05",
+   "date": "5/6",
+   "location": "台3乙線12K+000",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/12",
+   "location": "台3線36K+000",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/14",
+   "location": "台3線3?K+800",
+   "issue": "路肩落葉?",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/16",
+   "location": "員林路一段",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.05",
+   "date": "5/21",
+   "location": "台3乙線12K+000",
+   "issue": "路面砂石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/26",
+   "location": "台4線31K+200",
+   "issue": "掉落物?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/28",
+   "location": "台3線?華路??號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.05",
+   "date": "5/29",
+   "location": "台4線32K+400",
+   "issue": "路殺",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.05",
+   "date": "5/30",
+   "location": "台3線51K+300",
+   "issue": "坍方",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/2",
+   "location": "台3線36K+200",
+   "issue": "路肩雜草",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/6",
+   "location": "台3乙線8K+500?",
+   "issue": "路肩雜草",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/10",
+   "location": "台3線42K+450",
+   "issue": "路面油漬",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/12",
+   "location": "台3線35K+900",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/16",
+   "location": "台3線41K+350",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/19",
+   "location": "台3線5?K+200",
+   "issue": "擋土牆倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/24",
+   "location": "台3線52K+200",
+   "issue": "樹木遮蔽標誌",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.06",
+   "date": "6/27",
+   "location": "台3線33K+200",
+   "issue": "路肩雜草",
+   "action": "派工清除?"
+  },
+  {
+   "month": "114.07",
+   "date": "7/3",
+   "location": "台3線33K+700左側",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.07",
+   "date": "7/7",
+   "location": "台4線34K+950",
+   "issue": "車禍油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.07",
+   "date": "7/9",
+   "location": "台3乙線員樹路一段53號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.07",
+   "date": "7/11",
+   "location": "台3乙線12K",
+   "issue": "路肩雜草",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.07",
+   "date": "7/15",
+   "location": "台4線25K+950",
+   "issue": "路面砂石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.07",
+   "date": "7/16",
+   "location": "台3乙線員樹路?段51號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.07",
+   "date": "7/22",
+   "location": "台3乙線2K+600",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.07",
+   "date": "7/28",
+   "location": "台3線31K+400",
+   "issue": "路肩雜草",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.07",
+   "date": "7/29",
+   "location": "台3線42K+400",
+   "issue": "鋪面水?孔",
+   "action": "派員修理"
+  },
+  {
+   "month": "114.07",
+   "date": "7/31",
+   "location": "台3線33K+150",
+   "issue": "路肩雜草",
+   "action": "派員修剪"
+  },
+  {
+   "month": "114.08",
+   "date": "8/1",
+   "location": "台3線39K+200",
+   "issue": "路面碎石",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.08",
+   "date": "8/4",
+   "location": "台4線36K+250",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.08",
+   "date": "8/8",
+   "location": "台4線康莊路5段4?3巷",
+   "issue": "路面混凝土",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.08",
+   "date": "8/11",
+   "location": "台4線37K+350左側",
+   "issue": "樹木移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.08",
+   "date": "8/19",
+   "location": "台3線中興路295號",
+   "issue": "管子移除",
+   "action": "派員移除"
+  },
+  {
+   "month": "114.08",
+   "date": "8/21",
+   "location": "台3線33K+100",
+   "issue": "路肩雜草",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.08",
+   "date": "8/26",
+   "location": "台3線33K+400",
+   "issue": "掉落物",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.08",
+   "date": "8/28",
+   "location": "台3線33K+000",
+   "issue": "路肩落葉",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/2",
+   "location": "台3線33K+500?",
+   "issue": "路肩落葉?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/5",
+   "location": "台3乙線7K+400?",
+   "issue": "路肩落葉?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/10",
+   "location": "台4線31K+750?",
+   "issue": "路肩芒草?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/12",
+   "location": "?段40號?",
+   "issue": "廢土移除",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/17",
+   "location": "台4線32K+400",
+   "issue": "路肩芒草?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/19",
+   "location": "台3線30K+400?",
+   "issue": "路肩芒草?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.09",
+   "date": "9/22",
+   "location": "台3乙線7K+150",
+   "issue": "溝蓋損壞?",
+   "action": "派員修復?"
+  },
+  {
+   "month": "114.09",
+   "date": "9/24",
+   "location": "台3乙線9K+150?",
+   "issue": "溝蓋損壞?",
+   "action": "派員修復?"
+  },
+  {
+   "month": "114.09",
+   "date": "9/29",
+   "location": "台3線51K+100?",
+   "issue": "路肩芒草?",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/3",
+   "location": "台4線29K+600",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/7",
+   "location": "台3乙線永福路?",
+   "issue": "溝蓋損壞",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/8",
+   "location": "台3線32K+700",
+   "issue": "牆面破損",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/14",
+   "location": "台4線37K+650",
+   "issue": "樹木砍伐",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.10",
+   "date": "10/16",
+   "location": "台4線37K+500",
+   "issue": "樹木砍伐",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.10",
+   "date": "10/21",
+   "location": "台4線30K+800",
+   "issue": "樹木倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/23",
+   "location": "台3乙線9K+400",
+   "issue": "集水井清淤",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/24",
+   "location": "台4線36K+700",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/29",
+   "location": "台3線49K+800",
+   "issue": "路殺",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.10",
+   "date": "10/30",
+   "location": "台3線34K+500",
+   "issue": "路肩落葉",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.11",
+   "date": "11/3",
+   "location": "台4線29K+500",
+   "issue": "竹雜木砍伐",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.11",
+   "date": "11/7",
+   "location": "台3乙線?6K+500",
+   "issue": "纜線垂落?",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.11",
+   "date": "11/12",
+   "location": "台3乙線5K+450右側",
+   "issue": "枯木砍伐",
+   "action": "派員清除"
+  },
+  {
+   "month": "114.11",
+   "date": "11/13",
+   "location": "台3線39K+150",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.11",
+   "date": "11/18",
+   "location": "台3線41K+250",
+   "issue": "路面砂石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.11",
+   "date": "11/21",
+   "location": "台3線35K+050",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.11",
+   "date": "11/24",
+   "location": "台3乙線9K+800?",
+   "issue": "水漬清洗",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.11",
+   "date": "11/26",
+   "location": "台3乙線5K+150",
+   "issue": "鐵件切除",
+   "action": "派員處理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/1",
+   "location": "台3線32K+300",
+   "issue": "路肩落葉清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/4",
+   "location": "台3線37K+800",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/10",
+   "location": "台3線36K+200",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/11",
+   "location": "台3乙線5K+000",
+   "issue": "洩水孔清淤?",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.12",
+   "date": "12/17",
+   "location": "台3線武嶺橋",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/19",
+   "location": "台3線39K+000",
+   "issue": "路面泥沙?",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "114.12",
+   "date": "12/22",
+   "location": "台3線32K+150",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/26",
+   "location": "台3線36K+000",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "114.12",
+   "date": "12/29",
+   "location": "台4線34K+750",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.01",
+   "date": "1/5",
+   "location": "台3乙線11K+600",
+   "issue": "路面砂石",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.01",
+   "date": "1/7",
+   "location": "台3線36K+800",
+   "issue": "路肩雜草",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.01",
+   "date": "1/8",
+   "location": "台4線36K+100",
+   "issue": "護欄污漬",
+   "action": "派員及水車清洗"
+  },
+  {
+   "month": "115.01",
+   "date": "1/14",
+   "location": "台4線32K+200",
+   "issue": "路面砂石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "115.01",
+   "date": "1/19",
+   "location": "台4線31K+800",
+   "issue": "樹木倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.01",
+   "date": "1/20",
+   "location": "台3線39K+200",
+   "issue": "路肩雜草",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.01",
+   "date": "1/26",
+   "location": "台3線37K+400?",
+   "issue": "路肩雜草",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.01",
+   "date": "1/28",
+   "location": "台4線32K+100",
+   "issue": "路肩雜草",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/4",
+   "location": "台4線34K+400",
+   "issue": "路肩雜草",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/6",
+   "location": "台3線35K+000",
+   "issue": "路肩落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/11",
+   "location": "台3線35K+000",
+   "issue": "路肩泥土",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/12",
+   "location": "台3線31K+500",
+   "issue": "掉落物清除",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/18",
+   "location": "台3線38K+300",
+   "issue": "路肩落葉",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/20",
+   "location": "台3線35K+?00",
+   "issue": "路肩落葉",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/24",
+   "location": "台4線38K+500",
+   "issue": "竹子倒塌",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.02",
+   "date": "2/25",
+   "location": "台4線溪州橋",
+   "issue": "竹子傾倒",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.03",
+   "date": "3/2",
+   "location": "台3線42K+300",
+   "issue": "路面土石泥土",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "115.03",
+   "date": "3/3",
+   "location": "台4線瑞安一段5?號",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "115.03",
+   "date": "3/9",
+   "location": "台4線34K+950",
+   "issue": "護欄破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "115.03",
+   "date": "3/11",
+   "location": "台3線38K+200右側",
+   "issue": "高大枯木移除",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.03",
+   "date": "3/18",
+   "location": "台3乙線7K+100",
+   "issue": "路肩雜草",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.03",
+   "date": "3/19",
+   "location": "台3線36K+000",
+   "issue": "路肩雜草",
+   "action": "派員清除"
+  },
+  {
+   "month": "115.03",
+   "date": "3/23",
+   "location": "台4線40K+400",
+   "issue": "路肩雜草",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.03",
+   "date": "3/24",
+   "location": "台3線36K+400",
+   "issue": "路肩樹葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.03",
+   "date": "3/30",
+   "location": "台3線37K+100",
+   "issue": "路肩雜草",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.04",
+   "date": "4/3",
+   "location": "台3線37K+400?",
+   "issue": "路肩砂石清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.04",
+   "date": "4/7",
+   "location": "台4線36K+500",
+   "issue": "路肩雜草?",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.04",
+   "date": "4/8",
+   "location": "台4線康莊路三段561-1號",
+   "issue": "路面油漬",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.04",
+   "date": "4/13",
+   "location": "台3乙線10K+000",
+   "issue": "路面碎石",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "115.04",
+   "date": "4/15",
+   "location": "台4線38K+400",
+   "issue": "竹子傾倒?",
+   "action": "派員移除"
+  },
+  {
+   "month": "115.04",
+   "date": "4/21",
+   "location": "台3線58K+500",
+   "issue": "路旁樹葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.04",
+   "date": "4/22",
+   "location": "台3線36K+900",
+   "issue": "路面玻璃碎片",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.04",
+   "date": "4/28",
+   "location": "台3乙線2K+100?",
+   "issue": "柵欄損壞?",
+   "action": "派員修復"
+  },
+  {
+   "month": "115.04",
+   "date": "4/29",
+   "location": "台3線52K+100",
+   "issue": "路肩落葉?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.05",
+   "date": "5/4",
+   "location": "台4線3?K+800",
+   "issue": "樹木倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.05",
+   "date": "5/5",
+   "location": "乾?橋?",
+   "issue": "清潔孔破損",
+   "action": "派員修復"
+  },
+  {
+   "month": "115.05",
+   "date": "5/8",
+   "location": "台4線27K+280",
+   "issue": "路殺",
+   "action": "派員清除"
+  },
+  {
+   "month": "115.05",
+   "date": "5/12",
+   "location": "台3乙線10K+000-10K+500",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "115.05",
+   "date": "5/21",
+   "location": "台3線?崎陡下坡?",
+   "issue": "路面油漬",
+   "action": "派水車清洗"
+  },
+  {
+   "month": "115.05",
+   "date": "5/22",
+   "location": "台3線4?K+8??",
+   "issue": "排水溝堵?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.05",
+   "date": "5/25",
+   "location": "台3乙線5K+100?",
+   "issue": "竹子傾倒",
+   "action": "派員清除"
+  },
+  {
+   "month": "115.05",
+   "date": "5/27",
+   "location": "台4線高???",
+   "issue": "樹木傾斜?",
+   "action": "派員處理?"
+  },
+  {
+   "month": "115.06",
+   "date": "6/3",
+   "location": "台3線36K+900?",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/5",
+   "location": "大?路16?號",
+   "issue": "水溝玻璃?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/9",
+   "location": "台3乙線11K+200",
+   "issue": "路面碎石",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/12",
+   "location": "台3線53K+300",
+   "issue": "柵欄損壞",
+   "action": "派員修復"
+  },
+  {
+   "month": "115.06",
+   "date": "6/15",
+   "location": "台4線28K+000?",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/18",
+   "location": "台4線29K+300",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/24",
+   "location": "台3線35K+300",
+   "issue": "路面落葉",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/26",
+   "location": "台3乙線?K+600",
+   "issue": "落葉清理",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.06",
+   "date": "6/29",
+   "location": "台4線?0K+600",
+   "issue": "路面積土?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/8",
+   "location": "台4線?湖路三段?號",
+   "issue": "水溝堵塞?",
+   "action": "派員處理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/14",
+   "location": "台3線37K+400",
+   "issue": "人行道?草?",
+   "action": "派員及水車清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/15",
+   "location": "台4線38K+300",
+   "issue": "竹子倒塌",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/20",
+   "location": "台3線46K+700",
+   "issue": "路面油漬",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/22",
+   "location": "台3線32K+500",
+   "issue": "路肩雜草?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/27",
+   "location": "台3線員林路?段75?號",
+   "issue": "路面玻璃碎片?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/29",
+   "location": "台3線35K+050",
+   "issue": "路肩落葉?",
+   "action": "派員清理"
+  },
+  {
+   "month": "115.07",
+   "date": "7/30",
+   "location": "台4線30K+650",
+   "issue": "路肩泥土",
+   "action": "派水車清洗"
+  }
+ ]
+}

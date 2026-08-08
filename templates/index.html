@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>台4線大溪-龍潭段 防災+路殺熱點分析</title>
-<meta name="description" content="台4線大溪-龍潭段公路防災與野生動物路殺公開熱點分析。每一筆事件均附完整資料與資料來源連結。">
+<title>復興工務段 養護熱點分析｜台3線・台3乙線・台4線</title>
+<meta name="description" content="公路局北區養護工程分局復興工務段 台3線/台3乙線/台4線 111-115年度養護與災害案件熱點分析，含路殺生態與查驗金額。資料由工務段照片、查驗表、巡查表解析。">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
@@ -13,168 +13,169 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1>台4線大溪-龍潭段 防災+路殺熱點分析</h1>
-    <p class="lede">只收錄能由公路局公告、新聞報導、路殺社紀錄或政府文件確認地點與時間，且能可靠定位的事件。點選任何熱點，都可直接讀原始來源。</p>
+    <h1>復興工務段 養護熱點分析</h1>
+    <p class="routes">台3線 30K+560–55K+154　｜　台3乙線 0K+000–12K+095　｜　台4線 26K+930–39K+269</p>
+    <p class="lede">以工務段 111–115 年度的照片、查驗表、巡查表逐案解析，把每一件養護與災害案件定位到里程與座標，找出真正的維護熱點。點任何熱點或案件都可看明細。</p>
     <div class="stats">
-      <div class="stat"><span class="num">{{ stats.hz_count }}</span><span class="label">防災事件</span></div>
-      <div class="stat"><span class="num">{{ stats.rk_count }}</span><span class="label">路殺事件</span></div>
-      <div class="stat"><span class="num">{{ stats.species_count }}</span><span class="label">涵蓋物種</span></div>
-      <div class="stat"><span class="num">{{ stats.hazard_type_count }}</span><span class="label">災害類型</span></div>
-      <div class="stat"><span class="num">{{ stats.corridor_count }}</span><span class="label">廊道內事件</span></div>
-      <div class="stat"><span class="num">{{ stats.verified_pct }}%</span><span class="label">可查證比例</span></div>
+      <div class="stat"><span class="num">{{ stats.case_count }}</span><span class="label">案件總數</span></div>
+      <div class="stat"><span class="num">{{ stats.defect_count }}</span><span class="label">缺失/維修案件</span></div>
+      <div class="stat"><span class="num">{{ stats.hotspot_count }}</span><span class="label">公里熱點區間</span></div>
+      <div class="stat"><span class="num">{{ stats.roadkill_count }}</span><span class="label">路殺件數</span></div>
+      <div class="stat"><span class="num">{{ "%.1f"|format(stats.inspection_amount/100000000) }}億</span><span class="label">查驗金額(估)</span></div>
+      <div class="stat"><span class="num">{{ stats.geo_pct }}%</span><span class="label">有座標比例</span></div>
     </div>
-    <p class="note">分析範圍：台4線 25K（大溪老街周邊）至 41.544K（龍潭大坪），路中心線兩側 500 公尺為緩衝廊道。資料期間：{{ stats.earliest }} 至 {{ stats.latest }}。凡標「非台4廊道」的參考事件，作為周邊風險背景，不列入廊道統計。</p>
+    <p class="note">資料年度：民國 {{ stats.year_min }}–{{ stats.year_max }} 年（115 年進行中）。座標由公路局里程牌內插，誤差約 ±150 公尺，於「公里熱點」尺度足夠。資料產生：{{ generated }}。</p>
   </div>
 </header>
 
-<section class="section" id="hotspot-overview">
+<nav class="tabnav">
   <div class="wrap">
-    <h2>熱點總覽</h2>
-    <p class="sec-lede">先看整段廊道的空間分布；再切換下方可點地圖查每一則原始來源。</p>
-    <figure class="hotspot-fig">
-      <img src="assets/hotspot-overview.svg" alt="台4線大溪-龍潭段廊道防災+路殺熱點示意，涵蓋大溪橋、崁津大橋、石門水庫周邊、龍潭市區外圍。">
-      <figcaption>熱度以事件密度計。廊道內 {{ stats.corridor_count }} 則、參考事件併同顯示。</figcaption>
-    </figure>
+    <a href="#map-section">熱點地圖</a>
+    <a href="#rank">熱點排行</a>
+    <a href="#trend">年度趨勢</a>
+    <a href="#eco">路殺生態</a>
+    <a href="#cost">查驗金額</a>
+    <a href="#list">案件清單</a>
+    <a href="#method">方法與限制</a>
   </div>
-</section>
+</nav>
 
 <section class="section" id="map-section">
   <div class="wrap">
     <h2>可點查證地圖</h2>
-    <p class="sec-lede">兩層事件可獨立開關；點熱點展開該地全部事件；側欄可依類型、年份、廊道位置篩選。</p>
+    <p class="sec-lede">泡泡=公里熱點（大小依件數、顏色依路線）；可切換個別案件點、路殺點；側欄依路線、年份、類型篩選。</p>
     <div class="map-controls">
       <fieldset>
         <legend>圖層</legend>
-        <label><input type="checkbox" id="lyr-hazard" checked> 防災事件（藍）</label>
-        <label><input type="checkbox" id="lyr-roadkill" checked> 路殺事件（紅）</label>
-        <label><input type="checkbox" id="lyr-heat" checked> 熱力圖</label>
+        <label><input type="checkbox" id="lyr-hotspot" checked> 公里熱點泡泡</label>
+        <label><input type="checkbox" id="lyr-cases"> 個別案件點</label>
+        <label><input type="checkbox" id="lyr-roadkill"> 路殺點</label>
       </fieldset>
       <fieldset>
-        <legend>廊道位置</legend>
-        <label><input type="checkbox" class="f-corridor" value="inside" checked> 廊道內</label>
-        <label><input type="checkbox" class="f-corridor" value="edge" checked> 廊道邊緣</label>
-        <label><input type="checkbox" class="f-corridor" value="co-line" checked> 共線段</label>
-        <label><input type="checkbox" class="f-corridor" value="reference" checked> 參考事件</label>
+        <legend>路線</legend>
+        <label><input type="checkbox" class="f-route" value="台3線" checked> 台3線</label>
+        <label><input type="checkbox" class="f-route" value="台3乙線" checked> 台3乙線</label>
+        <label><input type="checkbox" class="f-route" value="台4線" checked> 台4線</label>
       </fieldset>
       <fieldset>
         <legend>年份</legend>
         <select id="f-year"><option value="">全部</option></select>
       </fieldset>
+      <fieldset>
+        <legend>類型</legend>
+        <select id="f-category"><option value="">全部</option></select>
+      </fieldset>
     </div>
     <div id="map"></div>
-    <p class="map-note">底圖：© OpenStreetMap 貢獻者。座標若為推估，事件詳細頁的備註會註明。</p>
+    <p class="map-note">底圖：© OpenStreetMap 貢獻者。點泡泡看該公里案件清單；座標為里程內插估算。</p>
   </div>
 </section>
 
-<section class="section" id="event-list">
+<section class="section" id="rank">
   <div class="wrap">
-    <h2>全部可查證事件 <span class="count-badge">{{ events|length }} 筆</span></h2>
-    <p class="sec-lede">依日期由新到舊排序。即使地圖載入失敗，右側「獨立頁」仍可直接打開完整欄位與資料來源。</p>
+    <h2>前 15 大熱點</h2>
+    <p class="sec-lede">依案件數排序。點「查看」會在上方地圖聚焦該熱點。</p>
+    <table class="rank-table">
+      <thead><tr><th>#</th><th>路段</th><th>件數</th><th>主要類型</th><th></th></tr></thead>
+      <tbody>
+        {% for h in top_hotspots %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ h.label }}</td>
+          <td class="num-cell">{{ h.total }}</td>
+          <td>{% set topcat = h.by_category.items()|list|sort(attribute='1', reverse=true) %}{{ topcat[0][0] }}（{{ topcat[0][1] }}）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="{{ h.lat }}" data-lon="{{ h.lon }}" data-label="{{ h.label }}">在地圖查看 →</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
 
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="all">全部 ({{ events|length }})</button>
-      <button class="tab-btn" data-tab="hazard">防災 ({{ stats.hz_count }})</button>
-      <button class="tab-btn" data-tab="roadkill">路殺 ({{ stats.rk_count }})</button>
+<section class="section" id="trend">
+  <div class="wrap">
+    <h2>年度趨勢與分布</h2>
+    <p class="sec-lede">115 年度統計至 8 月（進行中年度），趨勢判讀請注意。</p>
+    <div class="chart-grid">
+      <div class="chart-box"><h3>案件數 × 年度</h3><canvas id="chart-year"></canvas></div>
+      <div class="chart-box"><h3>缺失案件 × 類型</h3><canvas id="chart-category"></canvas></div>
+      <div class="chart-box"><h3>案件 × 路線</h3><canvas id="chart-route"></canvas></div>
+      <div class="chart-box"><h3>災害 vs 養護</h3><canvas id="chart-kind"></canvas></div>
     </div>
-
-    <ul class="ev-list">
-      {% for e in events %}
-      <li class="ev-item ev-{{ e.type }}" data-type="{{ e.type }}">
-        <div class="ev-line">
-          <span class="ev-tag tag-{{ e.type }}">{% if e.type == 'hazard' %}防災{% else %}路殺{% endif %}</span>
-          <span class="ev-cat">{{ e.category }}</span>
-          <span class="ev-date">{{ e.date }}</span>
-          <span class="ev-corridor c-{{ e.corridor }}">
-            {% if e.corridor == 'inside' %}廊道內
-            {% elif e.corridor == 'edge' %}廊道邊緣
-            {% elif e.corridor == 'co-line' %}共線段
-            {% else %}參考事件
-            {% endif %}
-          </span>
-        </div>
-        <div class="ev-title">{{ e.title }}</div>
-        <div class="ev-meta">
-          {% if e.km %}<span>{{ e.km }}</span>{% endif %}
-          {% if e.source_text %}<span>來源：{{ e.source_text }}</span>{% endif %}
-          <a class="detail-link" href="q/{{ e.id }}/">獨立頁 →</a>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
   </div>
 </section>
 
-{% if pairs %}
-<section class="section" id="overlap">
+<section class="section" id="eco">
   <div class="wrap">
-    <h2>防災 ∩ 路殺 500 公尺重疊熱點 <span class="count-badge">{{ pairs|length }} 對</span></h2>
-    <ul class="pair-list">
-      {% for p in pairs %}
-      <li>
-        <a href="q/{{ p.hazard_id }}/">{{ p.hazard_title }}</a>
-        ↔
-        <a href="q/{{ p.roadkill_id }}/">{{ p.roadkill_title }}</a>
-        <span class="dist">{{ p.distance_m }} m</span>
-      </li>
-      {% endfor %}
-    </ul>
+    <h2>路殺生態</h2>
+    <p class="sec-lede">養護巡查路殺調查回報表 110.11–115.07 共 55 個月、{{ stats.roadkill_count }} 件。可在上方地圖開「路殺點」圖層看位置。</p>
+    <div class="chart-grid">
+      <div class="chart-box"><h3>路殺物種分布</h3><canvas id="chart-species"></canvas></div>
+      <div class="chart-box">
+        <h3>說明</h3>
+        <p class="eco-note">多數為犬貓等伴生動物；<strong>食蟹獴</strong>屬《野生動物保育法》保育類，出現於路殺紀錄值得追蹤。物種與位置來自巡查員手寫回報，部分僅到路段。</p>
+      </div>
+    </div>
   </div>
 </section>
-{% endif %}
+
+<section class="section" id="cost">
+  <div class="wrap">
+    <h2>查驗金額</h2>
+    <p class="sec-lede">查驗表數量×契約單價逐項計算，共 {{ stats.cost_items }} 項、{{ stats.inspection_events }} 個查驗事件，累計約 NT$ {{ "{:,}".format(stats.inspection_amount) }}（估算，實際以估驗計價為準）。</p>
+    <div class="chart-box wide"><h3>查驗金額 × 年度</h3><canvas id="chart-cost"></canvas></div>
+  </div>
+</section>
+
+<section class="section" id="list">
+  <div class="wrap">
+    <h2>案件清單 <span class="count-badge" id="list-count"></span></h2>
+    <p class="sec-lede">跟上方地圖篩選連動。點列展開明細。工程施工紀錄不列入熱點統計但一併呈現。</p>
+    <div class="list-controls">
+      <input type="search" id="list-search" placeholder="搜尋案件名稱、里程、編號…">
+      <label><input type="checkbox" id="only-geo"> 只看有座標</label>
+    </div>
+    <ul class="case-list" id="case-list"></ul>
+    <button id="load-more" class="load-more">載入更多</button>
+  </div>
+</section>
 
 <section class="section" id="method">
   <div class="wrap">
-    <h2>方法、收錄規則、資料來源與限制</h2>
-    <div class="method-block">
-      <h3>收錄規則</h3>
-      <p>事件必須：(a) 有可查證的原始來源（新聞連結、公路局公告、路殺社紀錄或政府文件）；(b) 有明確地點描述能定位；(c) 發生於台4線 25K-41.544K 範圍或路中心線兩側 500m 緩衝廊道內。廊道外但同區具參考價值者，標「參考事件」併同顯示，不列入廊道統計。</p>
-    </div>
-    <div class="method-block">
-      <h3>排除規則</h3>
-      <p>無法定位者、僅為傳聞未查證者、發生於台4線範圍外且無區域參考價值者，不放進地圖。</p>
-    </div>
-    <div class="method-block">
-      <h3>重複處理</h3>
-      <p>同一地點多次發生仍各算一筆；巡守隊/野放等彙整型資料以「AGG」為 ID 尾綴且日期記為當年12/31以便呈現。</p>
-    </div>
+    <h2>方法、資料來源與限制</h2>
     <div class="method-block">
       <h3>資料來源</h3>
-      <ul>
-        <li>公路局北區養護工程分局復興工務段 公告與新聞稿（thbu1.thb.gov.tw）</li>
-        <li>臺灣動物路死觀察網 路殺社（roadkill.tw）</li>
-        <li>主流媒體：自由時報、聯合新聞網、中國時報、桃園電子報、ETtoday</li>
-        <li>交通部 168 交通安全入口網（歷史事件）</li>
-      </ul>
+      <p>公路局北區養護工程分局復興工務段 111–115 年度：災害/養護照片資料夾（46,501 檔、1,334 案件夾）、查驗表數量明細、巡查日報表、路殺調查回報表。案件由資料夾名稱與內容自動解析。</p>
     </div>
     <div class="method-block">
-      <h3>已知限制與未取得資料源</h3>
-      <ul>
-        <li>iNaturalist、TBN 台灣生物多樣性網、路殺社進階查詢 需登入才能匯出座標</li>
-        <li>公路局北養內部災害通報彙整表 需依《政府資訊公開法》申請</li>
-        <li>政府採購網（tender.nat.gov.tw）台4線災修合約 建議另行檢索反推事件</li>
-        <li>中央地調所山崩地滑資料庫 需 GIS 介接</li>
-        <li>桃園市府 EOC 日誌、消防局出勤紀錄 非公開</li>
-        <li>台4線 25K-39K 實際養護單位為復興工務段（非大溪工務段），北養無「大溪工務段」建制</li>
-      </ul>
+      <h3>座標與熱點</h3>
+      <p>座標由公路局「省道里程坐標（里程牌標誌）」內插產生，樁距約 300 公尺、誤差約 ±150 公尺，適用於「公里熱點」尺度。熱點以每 1 公里為一區間聚合；跨里程案件計入每個涵蓋區間。共 {{ stats.geo_count }} 筆案件、52 個區間有座標。</p>
     </div>
     <div class="method-block">
-      <h3>座標精度</h3>
-      <p>WGS84 十進位度，5 位小數（約 1 公尺）。座標由地標推估者，事件詳細頁備註標明「座標推估」。</p>
+      <h3>統計口徑</h3>
+      <p>熱點統計以「缺失/維修案件」為主（{{ stats.defect_count }} 筆），工程施工紀錄與查驗紀錄不灌入單一里程件數。日期為民國紀年字串。類型為關鍵字自動初分，「其他」約 254 筆，後續人工修正會回寫資料、網站讀資料不寫死。</p>
+    </div>
+    <div class="method-block">
+      <h3>限制</h3>
+      <p>115 年度統計至 8 月為進行中；查驗金額為數量×單價估算，非估驗計價定案值；路殺物種與位置為巡查員手寫回報 AI 判讀，部分含不確定字。9 筆里程超出公告養護範圍者已排除於熱點聚合外，待業主確認。</p>
+    </div>
+    <div class="method-block">
+      <h3>養護官方範圍</h3>
+      <p>台3線 30K+560–55K+154、台3乙線 0K+000–12K+095、台4線 26K+930–39K+269（取自路殺調查表）。</p>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>本頁專責熱點空間集中度與原始來源。事件真偽、責任歸屬另由主管機關認定。</p>
-    <p class="build">Build {{ build_time }}｜資料來源：<code>data/events.xlsx</code></p>
+    <p>本頁呈現養護案件的空間集中度與統計。金額為估算，案件性質與責任歸屬以主管機關認定為準。</p>
+    <p class="build">Build {{ build_time }}｜資料源：<code>data/*.json</code></p>
   </div>
 </footer>
 
-<script id="events-data" type="application/json">{{ events_json|safe }}</script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="assets/main.js"></script>
 </body>
 </html>

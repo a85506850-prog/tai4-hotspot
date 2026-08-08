@@ -1,0 +1,1571 @@
+{
+ "generated": "115.08.07",
+ "source": "養護巡查路殺調查回報表55個月",
+ "monthly": [
+  {
+   "month": "110.11",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "110.11",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "110.11",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "110.12",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "110.12",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "鳥",
+   "notes": [
+    "12/13-台3乙6K+800右側"
+   ]
+  },
+  {
+   "month": "110.12",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.01",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "1/13-台3線41K+500右側"
+   ]
+  },
+  {
+   "month": "111.01",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.01",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.02",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.02",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.02",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "2/8-台4線崁津橋右側"
+   ]
+  },
+  {
+   "month": "111.03",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.03",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.03",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.04",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "鳥",
+   "notes": [
+    "4/28-台3線42k+480左側"
+   ]
+  },
+  {
+   "month": "111.04",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "蛇",
+   "notes": [
+    "4/27-台3乙線9k+510左側"
+   ]
+  },
+  {
+   "month": "111.04",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.05",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "5/8-員林路3段365號"
+   ]
+  },
+  {
+   "month": "111.05",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "松鼠",
+   "notes": [
+    "5/6-台3乙線3k+900左側"
+   ]
+  },
+  {
+   "month": "111.05",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.06",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.06",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.06",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.09",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.09",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.09",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.10",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.10",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.10",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.11",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.11",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.11",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.12",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.12",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "111.12",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.09",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "9/15-台3線武嶺橋"
+   ]
+  },
+  {
+   "month": "112.09",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.09",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.01",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 3,
+   "species": "貓、狗",
+   "notes": [
+    "1/17-台3線52K+200左側(貓)",
+    "1/3-台3線55K+150左側(貓)",
+    "1/30-台3線50K+700右側(狗)"
+   ]
+  },
+  {
+   "month": "112.01",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.01",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.02",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.02",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.02",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.03",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "3/1-台3線38K+500"
+   ]
+  },
+  {
+   "month": "112.03",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.03",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "3/7-台4線37K+250左側"
+   ]
+  },
+  {
+   "month": "112.04",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.04",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.04",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.05",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.05",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.05",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.06",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.06",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.06",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.07",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.07",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.07",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.08",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.08",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.08",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "狗",
+   "notes": [
+    "8/3-台4線28K+750"
+   ]
+  },
+  {
+   "month": "112.10",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.10",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.10",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.11",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.11",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.11",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.12",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "12/29-台3線38K+000左側"
+   ]
+  },
+  {
+   "month": "112.12",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "112.12",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.01",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "狗",
+   "notes": [
+    "1/1-台3線44K+600右側"
+   ]
+  },
+  {
+   "month": "113.01",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.01",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "1/2-台4線30K+900右側"
+   ]
+  },
+  {
+   "month": "113.02",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.02",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.02",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.03",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.03",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "3/18-台3乙線10K+550"
+   ]
+  },
+  {
+   "month": "113.03",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "3/8-台4線37K+300"
+   ]
+  },
+  {
+   "month": "113.04",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.04",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "鳥",
+   "notes": [
+    "4/13-台3乙線5K+000-6K+500左側"
+   ]
+  },
+  {
+   "month": "113.04",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "4/9-台4線30K+500"
+   ]
+  },
+  {
+   "month": "113.05",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "狗",
+   "notes": [
+    "5/6-台3線44K+500"
+   ]
+  },
+  {
+   "month": "113.05",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.05",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "食蟹蒙",
+   "notes": [
+    "5/23-台4線33K+450"
+   ]
+  },
+  {
+   "month": "113.06",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.06",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.06",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.07",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.07",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.07",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.08",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 3,
+   "species": "貓",
+   "notes": [
+    "8/18-台3線34K+600",
+    "8/8-台3線40K+300左側",
+    "8/29-台3線49K+400"
+   ]
+  },
+  {
+   "month": "113.08",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.08",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.09",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.09",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.09",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.10",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.10",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 2,
+   "species": "松鼠",
+   "notes": [
+    "10/14-台3乙線8K+200",
+    "10/22-台3乙線5K+800"
+   ]
+  },
+  {
+   "month": "113.10",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.11",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.11",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "11/29-台3乙線8K+100右側"
+   ]
+  },
+  {
+   "month": "113.11",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.12",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "12/18-台3線52K+900"
+   ]
+  },
+  {
+   "month": "113.12",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "113.12",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "12/5-台4線30K+200右側"
+   ]
+  },
+  {
+   "month": "114.01",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.01",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.01",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "1/2-台4線27K+350"
+   ]
+  },
+  {
+   "month": "114.02",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.02",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.02",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.03",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.03",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.03",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.04",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.04",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "4/12-台3乙線0K+600"
+   ]
+  },
+  {
+   "month": "114.04",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.05",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.05",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.05",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "5/29-台4線32k+900"
+   ]
+  },
+  {
+   "month": "114.06",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "6/12-台3線35K+900"
+   ]
+  },
+  {
+   "month": "114.06",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.06",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.07",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "7/3-台3線33K+000左側"
+   ]
+  },
+  {
+   "month": "114.07",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.07",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.08",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.08",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "狗",
+   "notes": [
+    "8/31-台3乙線1K+700"
+   ]
+  },
+  {
+   "month": "114.08",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.09",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.09",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.09",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.10",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "10/29-台3線49K+800"
+   ]
+  },
+  {
+   "month": "114.10",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.10",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 2,
+   "species": "老鼠、貓",
+   "notes": [
+    "10/3-台4線29K+600右側",
+    "10/24-台4線36k+700"
+   ]
+  },
+  {
+   "month": "114.11",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.11",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "11/8-台3乙線9K+400左側"
+   ]
+  },
+  {
+   "month": "114.11",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.12",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.12",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "114.12",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.01",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.01",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.01",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.02",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.02",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.02",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.03",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.03",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.03",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.04",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.04",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.04",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "4/12台4線36K+200"
+   ]
+  },
+  {
+   "month": "115.05",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.05",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.05",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 1,
+   "species": "貓",
+   "notes": [
+    "5/8-台4線27K+200"
+   ]
+  },
+  {
+   "month": "115.06",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.06",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.06",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.07",
+   "route": "台3線",
+   "range": "30k+560~55k+154",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.07",
+   "route": "台3乙線",
+   "range": "0k+000~12k+095",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  },
+  {
+   "month": "115.07",
+   "route": "台4線",
+   "range": "26k+930~39k+269",
+   "patrol_count": 4,
+   "roadkill_count": 0,
+   "species": "",
+   "notes": []
+  }
+ ]
+}

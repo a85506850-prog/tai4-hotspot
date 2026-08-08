@@ -1,0 +1,1950 @@
+{
+ "generated": "115.08.07",
+ "count": 216,
+ "events": [
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "9XX",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 109145.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 3572
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 416281.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 24,
+   "amount": 583838.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 14099
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 35190
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 354976.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 424567.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 78204.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 88232.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 395428.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 787837.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 194703.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 18,
+   "amount": 112981.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 57578.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 23,
+   "amount": 543909.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 24,
+   "amount": 599040.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 21,
+   "amount": 399961.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 573375
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "19",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 1160634.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "20",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 414807.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "21",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 671391.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "22",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 377556.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "23",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 476909.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "24",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 302544.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "25",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 341086.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "26",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 523806.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "27",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 465960.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "28",
+   "inspection_date": null,
+   "item_count": 17,
+   "amount": 746644.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "29",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 448784.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "30",
+   "inspection_date": null,
+   "item_count": 3,
+   "amount": 455916.0
+  },
+  {
+   "year": 111,
+   "kind": "零星養護",
+   "period": "11101",
+   "event": "31",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 486062.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 52550
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 21,
+   "amount": 297904
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 17,
+   "amount": 1837597.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 54053.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 1543680.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 24158.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 1513637.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 137926.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 68713
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 676921.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 712130.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 271783.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 110462
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 545773.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 214067
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 1102161.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 1048998.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 649257.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "19",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 965063.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "20",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 940761.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "21",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 738667.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "22",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 888192.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "23",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 187969.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "24",
+   "inspection_date": null,
+   "item_count": 19,
+   "amount": 666622.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "25",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 624012.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "26",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 436634.0
+  },
+  {
+   "year": 111,
+   "kind": "災害搶修",
+   "period": "11102",
+   "event": "27",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 139951
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 2,
+   "amount": 8236
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 517829.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 350023.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 65244
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 1321717.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 429001.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 646166.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 556985.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 470993.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 383759.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 369781.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 278535.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 549333.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 389629.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 429582.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 391321.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 372382.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 568339.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "19",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 596729.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "20",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 408960.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "21",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 432675.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "22",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 562422.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "23",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 314042.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "24",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 603587.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "25",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 268670.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "26",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 296712.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "27",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 546615.0
+  },
+  {
+   "year": 112,
+   "kind": "零星養護",
+   "period": "11201",
+   "event": "28",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 491772.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 2,
+   "amount": 8424
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 88696
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 2,
+   "amount": 28720
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 296844.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 112162
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 40862
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 17,
+   "amount": 145775.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 1582273
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 1470450
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 509646.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 268902.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 118240.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 948154.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 471929
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 2458226.0
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 224240
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 332912
+  },
+  {
+   "year": 112,
+   "kind": "災害搶修",
+   "period": "11202",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 3,
+   "amount": 513170
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 2,
+   "amount": 8545
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 75745
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 18,
+   "amount": 650885.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 380240.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 414697.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 17,
+   "amount": 230500.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 466860.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 912955.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 407808.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 17,
+   "amount": 864190.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 251079.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 308863.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 391965.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 357350.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 417753.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 381113.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 861851.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 427378.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "19",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 413815.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "20",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 470744.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "21",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 475810.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "22",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 544315.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "23",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 548794.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "24",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 368418.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "25",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 609024.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "26",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 322130.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "27",
+   "inspection_date": null,
+   "item_count": 3,
+   "amount": 429174.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "28",
+   "inspection_date": null,
+   "item_count": 3,
+   "amount": 295935.0
+  },
+  {
+   "year": 113,
+   "kind": "零星養護",
+   "period": "11301",
+   "event": "29",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 524039.0
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 2,
+   "amount": 8513
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 105598
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 35224
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 77518
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 89403
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 3,
+   "amount": 94440
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 2717470
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 197582
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 2614516.0
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 133492
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 1633149
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 468248.0
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 666047
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 195864
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 216448
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 369018
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 4405565
+  },
+  {
+   "year": 113,
+   "kind": "災害搶修",
+   "period": "11302",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 19,
+   "amount": 1341104.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 3840
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 95315
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 345396.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 552913.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 347471.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 513156.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 19,
+   "amount": 592780.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 429680.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 378367.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 389686.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 272651.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 502270.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 585526.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 381415.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 306191.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 600336.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 390094.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 445511.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "19",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 308551.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "20",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 445384.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "21",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 354551.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "22",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 664436.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "23",
+   "inspection_date": null,
+   "item_count": 16,
+   "amount": 418979.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "24",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 407711.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "25",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 778666.0
+  },
+  {
+   "year": 114,
+   "kind": "零星養護",
+   "period": "11401",
+   "event": "26",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 342961.0
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 3916
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 99173
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 17,
+   "amount": 438847
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 3030888
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 127760
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 1258238
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 1044307.0
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 7,
+   "amount": 124341
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 1350646
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 197415
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 4,
+   "amount": 96436
+  },
+  {
+   "year": 114,
+   "kind": "災害搶修",
+   "period": "11402",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 321800
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 3890
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 368083.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 84394
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 327653.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 328983.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 551360.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "7",
+   "inspection_date": null,
+   "item_count": 9,
+   "amount": 328618.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "8",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 332933.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "9",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 315578.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "10",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 580328.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "11",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 457093.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "12",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 463455.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "13",
+   "inspection_date": null,
+   "item_count": 15,
+   "amount": 453215.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "14",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 633308.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "15",
+   "inspection_date": null,
+   "item_count": 14,
+   "amount": 502465.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "16",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 587633.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "17",
+   "inspection_date": null,
+   "item_count": 8,
+   "amount": 282515.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "18",
+   "inspection_date": null,
+   "item_count": 12,
+   "amount": 520060.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "19",
+   "inspection_date": null,
+   "item_count": 13,
+   "amount": 387058.0
+  },
+  {
+   "year": 115,
+   "kind": "零星養護",
+   "period": "11501",
+   "event": "20",
+   "inspection_date": null,
+   "item_count": 10,
+   "amount": 335488.0
+  },
+  {
+   "year": 115,
+   "kind": "災害搶修",
+   "period": "11502",
+   "event": "1",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 3918
+  },
+  {
+   "year": 115,
+   "kind": "災害搶修",
+   "period": "11502",
+   "event": "2",
+   "inspection_date": null,
+   "item_count": 11,
+   "amount": 97301
+  },
+  {
+   "year": 115,
+   "kind": "災害搶修",
+   "period": "11502",
+   "event": "3",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 96276
+  },
+  {
+   "year": 115,
+   "kind": "災害搶修",
+   "period": "11502",
+   "event": "4",
+   "inspection_date": null,
+   "item_count": 1,
+   "amount": 26447
+  },
+  {
+   "year": 115,
+   "kind": "災害搶修",
+   "period": "11502",
+   "event": "5",
+   "inspection_date": null,
+   "item_count": 5,
+   "amount": 137585
+  },
+  {
+   "year": 115,
+   "kind": "災害搶修",
+   "period": "11502",
+   "event": "6",
+   "inspection_date": null,
+   "item_count": 6,
+   "amount": 231706
+  }
+ ]
+}

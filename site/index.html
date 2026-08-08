@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>台4線大溪-龍潭段 防災+路殺熱點分析</title>
-<meta name="description" content="台4線大溪-龍潭段公路防災與野生動物路殺公開熱點分析。每一筆事件均附完整資料與資料來源連結。">
+<title>復興工務段 養護熱點分析｜台3線・台3乙線・台4線</title>
+<meta name="description" content="公路局北區養護工程分局復興工務段 台3線/台3乙線/台4線 111-115年度養護與災害案件熱點分析，含路殺生態與查驗金額。資料由工務段照片、查驗表、巡查表解析。">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
@@ -13,338 +13,265 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1>台4線大溪-龍潭段 防災+路殺熱點分析</h1>
-    <p class="lede">只收錄能由公路局公告、新聞報導、路殺社紀錄或政府文件確認地點與時間，且能可靠定位的事件。點選任何熱點，都可直接讀原始來源。</p>
+    <h1>復興工務段 養護熱點分析</h1>
+    <p class="routes">台3線 30K+560–55K+154　｜　台3乙線 0K+000–12K+095　｜　台4線 26K+930–39K+269</p>
+    <p class="lede">以工務段 111–115 年度的照片、查驗表、巡查表逐案解析，把每一件養護與災害案件定位到里程與座標，找出真正的維護熱點。點任何熱點或案件都可看明細。</p>
     <div class="stats">
-      <div class="stat"><span class="num">10</span><span class="label">防災事件</span></div>
-      <div class="stat"><span class="num">4</span><span class="label">路殺事件</span></div>
-      <div class="stat"><span class="num">2</span><span class="label">涵蓋物種</span></div>
-      <div class="stat"><span class="num">5</span><span class="label">災害類型</span></div>
-      <div class="stat"><span class="num">9</span><span class="label">廊道內事件</span></div>
-      <div class="stat"><span class="num">100%</span><span class="label">可查證比例</span></div>
+      <div class="stat"><span class="num">1334</span><span class="label">案件總數</span></div>
+      <div class="stat"><span class="num">1140</span><span class="label">缺失/維修案件</span></div>
+      <div class="stat"><span class="num">52</span><span class="label">公里熱點區間</span></div>
+      <div class="stat"><span class="num">43</span><span class="label">路殺件數</span></div>
+      <div class="stat"><span class="num">1.1億</span><span class="label">查驗金額(估)</span></div>
+      <div class="stat"><span class="num">69%</span><span class="label">有座標比例</span></div>
     </div>
-    <p class="note">分析範圍：台4線 25K（大溪老街周邊）至 41.544K（龍潭大坪），路中心線兩側 500 公尺為緩衝廊道。資料期間：2014-02-01 至 2026-07-11。凡標「非台4廊道」的參考事件，作為周邊風險背景，不列入廊道統計。</p>
+    <p class="note">資料年度：民國 111–115 年（115 年進行中）。座標由公路局里程牌內插，誤差約 ±150 公尺，於「公里熱點」尺度足夠。資料產生：115.08.07(更新2:加入座標)。</p>
   </div>
 </header>
 
-<section class="section" id="hotspot-overview">
+<nav class="tabnav">
   <div class="wrap">
-    <h2>熱點總覽</h2>
-    <p class="sec-lede">先看整段廊道的空間分布；再切換下方可點地圖查每一則原始來源。</p>
-    <figure class="hotspot-fig">
-      <img src="assets/hotspot-overview.svg" alt="台4線大溪-龍潭段廊道防災+路殺熱點示意，涵蓋大溪橋、崁津大橋、石門水庫周邊、龍潭市區外圍。">
-      <figcaption>熱度以事件密度計。廊道內 9 則、參考事件併同顯示。</figcaption>
-    </figure>
+    <a href="#map-section">熱點地圖</a>
+    <a href="#rank">熱點排行</a>
+    <a href="#trend">年度趨勢</a>
+    <a href="#eco">路殺生態</a>
+    <a href="#cost">查驗金額</a>
+    <a href="#list">案件清單</a>
+    <a href="#method">方法與限制</a>
   </div>
-</section>
+</nav>
 
 <section class="section" id="map-section">
   <div class="wrap">
     <h2>可點查證地圖</h2>
-    <p class="sec-lede">兩層事件可獨立開關；點熱點展開該地全部事件；側欄可依類型、年份、廊道位置篩選。</p>
+    <p class="sec-lede">泡泡=公里熱點（大小依件數、顏色依路線）；可切換個別案件點、路殺點；側欄依路線、年份、類型篩選。</p>
     <div class="map-controls">
       <fieldset>
         <legend>圖層</legend>
-        <label><input type="checkbox" id="lyr-hazard" checked> 防災事件（藍）</label>
-        <label><input type="checkbox" id="lyr-roadkill" checked> 路殺事件（紅）</label>
-        <label><input type="checkbox" id="lyr-heat" checked> 熱力圖</label>
+        <label><input type="checkbox" id="lyr-hotspot" checked> 公里熱點泡泡</label>
+        <label><input type="checkbox" id="lyr-cases"> 個別案件點</label>
+        <label><input type="checkbox" id="lyr-roadkill"> 路殺點</label>
       </fieldset>
       <fieldset>
-        <legend>廊道位置</legend>
-        <label><input type="checkbox" class="f-corridor" value="inside" checked> 廊道內</label>
-        <label><input type="checkbox" class="f-corridor" value="edge" checked> 廊道邊緣</label>
-        <label><input type="checkbox" class="f-corridor" value="co-line" checked> 共線段</label>
-        <label><input type="checkbox" class="f-corridor" value="reference" checked> 參考事件</label>
+        <legend>路線</legend>
+        <label><input type="checkbox" class="f-route" value="台3線" checked> 台3線</label>
+        <label><input type="checkbox" class="f-route" value="台3乙線" checked> 台3乙線</label>
+        <label><input type="checkbox" class="f-route" value="台4線" checked> 台4線</label>
       </fieldset>
       <fieldset>
         <legend>年份</legend>
         <select id="f-year"><option value="">全部</option></select>
       </fieldset>
+      <fieldset>
+        <legend>類型</legend>
+        <select id="f-category"><option value="">全部</option></select>
+      </fieldset>
     </div>
     <div id="map"></div>
-    <p class="map-note">底圖：© OpenStreetMap 貢獻者。座標若為推估，事件詳細頁的備註會註明。</p>
+    <p class="map-note">底圖：© OpenStreetMap 貢獻者。點泡泡看該公里案件清單；座標為里程內插估算。</p>
   </div>
 </section>
 
-<section class="section" id="event-list">
+<section class="section" id="rank">
   <div class="wrap">
-    <h2>全部可查證事件 <span class="count-badge">14 筆</span></h2>
-    <p class="sec-lede">依日期由新到舊排序。即使地圖載入失敗，右側「獨立頁」仍可直接打開完整欄位與資料來源。</p>
+    <h2>前 15 大熱點</h2>
+    <p class="sec-lede">依案件數排序。點「查看」會在上方地圖聚焦該熱點。</p>
+    <table class="rank-table">
+      <thead><tr><th>#</th><th>路段</th><th>件數</th><th>主要類型</th><th></th></tr></thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>台3線 38K</td>
+          <td class="num-cell">71</td>
+          <td>樹木/竹木/植栽（36）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.895245" data-lon="121.282605" data-label="台3線 38K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>台3線 37K</td>
+          <td class="num-cell">56</td>
+          <td>事故清理（25）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.890219" data-lon="121.281569" data-label="台3線 37K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>台3乙線 5K</td>
+          <td class="num-cell">55</td>
+          <td>樹木/竹木/植栽（25）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.842841" data-lon="121.243903" data-label="台3乙線 5K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>台4線 37K</td>
+          <td class="num-cell">46</td>
+          <td>樹木/竹木/植栽（17）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.837598" data-lon="121.271924" data-label="台4線 37K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>台4線 35K</td>
+          <td class="num-cell">44</td>
+          <td>樹木/竹木/植栽（25）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.852869" data-lon="121.279522" data-label="台4線 35K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>台4線 36K</td>
+          <td class="num-cell">41</td>
+          <td>樹木/竹木/植栽（11）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.846256" data-lon="121.273415" data-label="台4線 36K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>台3線 39K</td>
+          <td class="num-cell">41</td>
+          <td>樹木/竹木/植栽（12）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.896644" data-lon="121.280881" data-label="台3線 39K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>台3線 51K</td>
+          <td class="num-cell">38</td>
+          <td>樹木/竹木/植栽（8）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.846681" data-lon="121.208793" data-label="台3線 51K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>台3線 36K</td>
+          <td class="num-cell">34</td>
+          <td>樹木/竹木/植栽（10）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.884735" data-lon="121.289234" data-label="台3線 36K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>台3乙線 7K</td>
+          <td class="num-cell">34</td>
+          <td>樹木/竹木/植栽（8）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.827278" data-lon="121.242078" data-label="台3乙線 7K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>台4線 31K</td>
+          <td class="num-cell">31</td>
+          <td>樹木/竹木/植栽（17）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.883221" data-lon="121.279407" data-label="台4線 31K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>台3線 53K</td>
+          <td class="num-cell">27</td>
+          <td>樹木/竹木/植栽（8）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.830711" data-lon="121.206135" data-label="台3線 53K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>台3線 41K</td>
+          <td class="num-cell">26</td>
+          <td>事故清理（13）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.884678" data-lon="121.268956" data-label="台3線 41K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>台3乙線 9K</td>
+          <td class="num-cell">26</td>
+          <td>坍方/邊坡/土石（10）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.818708" data-lon="121.226317" data-label="台3乙線 9K">在地圖查看 →</a></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>台3線 52K</td>
+          <td class="num-cell">24</td>
+          <td>樹木/竹木/植栽（14）</td>
+          <td><a href="#map-section" class="focus-link" data-lat="24.838998" data-lon="121.209479" data-label="台3線 52K">在地圖查看 →</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="all">全部 (14)</button>
-      <button class="tab-btn" data-tab="hazard">防災 (10)</button>
-      <button class="tab-btn" data-tab="roadkill">路殺 (4)</button>
+<section class="section" id="trend">
+  <div class="wrap">
+    <h2>年度趨勢與分布</h2>
+    <p class="sec-lede">115 年度統計至 8 月（進行中年度），趨勢判讀請注意。</p>
+    <div class="chart-grid">
+      <div class="chart-box"><h3>案件數 × 年度</h3><canvas id="chart-year"></canvas></div>
+      <div class="chart-box"><h3>缺失案件 × 類型</h3><canvas id="chart-category"></canvas></div>
+      <div class="chart-box"><h3>案件 × 路線</h3><canvas id="chart-route"></canvas></div>
+      <div class="chart-box"><h3>災害 vs 養護</h3><canvas id="chart-kind"></canvas></div>
     </div>
-
-    <ul class="ev-list">
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">樹倒</span>
-          <span class="ev-date">2026-07-11</span>
-          <span class="ev-corridor c-inside">
-廊道內
-          </span>
-        </div>
-        <div class="ev-title">樹倒｜龍潭區龍新路與竹源街口</div>
-        <div class="ev-meta">
-<span>台4線約40.2K</span><span>來源：自由時報 5503331</span>          <a class="detail-link" href="q/HZ-20260711-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">樹倒</span>
-          <span class="ev-date">2026-07-11</span>
-          <span class="ev-corridor c-edge">
-廊道邊緣
-          </span>
-        </div>
-        <div class="ev-title">樹倒｜龍潭區新和路（多處斷枝）</div>
-        <div class="ev-meta">
-<span>台4線約41K</span><span>來源：ETtoday 20260713/3199969</span>          <a class="detail-link" href="q/HZ-20260711-002/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">邊坡滑動</span>
-          <span class="ev-date">2026-07-11</span>
-          <span class="ev-corridor c-reference">
-參考事件
-          </span>
-        </div>
-        <div class="ev-title">邊坡滑動｜龍潭區中豐路上林段（往新竹方向外側車道）</div>
-        <div class="ev-meta">
-<span>非台4線</span><span>來源：ETtoday 20260713/3199969</span>          <a class="detail-link" href="q/HZ-20260711-003/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">其他</span>
-          <span class="ev-date">2026-06-26</span>
-          <span class="ev-corridor c-inside">
-廊道內
-          </span>
-        </div>
-        <div class="ev-title">其他｜大溪區各處農田（月眉、康莊等台4線沿線代表點）</div>
-        <div class="ev-meta">
-<span>台4線約30.5K</span><span>來源：自由時報 5486090</span>          <a class="detail-link" href="q/HZ-20260626-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">其他</span>
-          <span class="ev-date">2025-12-22</span>
-          <span class="ev-corridor c-inside">
-廊道內
-          </span>
-        </div>
-        <div class="ev-title">其他｜崁津大橋（30K+300）</div>
-        <div class="ev-meta">
-<span>台4線30K+300</span><span>來源：桃園電子報</span>          <a class="detail-link" href="q/HZ-20251222-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-roadkill" data-type="roadkill">
-        <div class="ev-line">
-          <span class="ev-tag tag-roadkill">路殺</span>
-          <span class="ev-cat">穿山甲</span>
-          <span class="ev-date">2025-08-27</span>
-          <span class="ev-corridor c-reference">
-參考事件
-          </span>
-        </div>
-        <div class="ev-title">穿山甲路殺｜龍潭區渴望里 渴望二路（渴望園區周邊丘陵，霄里溪上游）</div>
-        <div class="ev-meta">
-<span>非台4線</span><span>來源：自由時報 5164892</span>          <a class="detail-link" href="q/RK-20250827-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-roadkill" data-type="roadkill">
-        <div class="ev-line">
-          <span class="ev-tag tag-roadkill">路殺</span>
-          <span class="ev-cat">蛇類</span>
-          <span class="ev-date">2024-12-31</span>
-          <span class="ev-corridor c-reference">
-參考事件
-          </span>
-        </div>
-        <div class="ev-title">蛇類路殺｜龍潭區聖德里（八德社區發展協會巡守隊守護範圍）</div>
-        <div class="ev-meta">
-<span>非台4線</span><span>來源：聯合新聞網 8175764</span>          <a class="detail-link" href="q/RK-2024-AGG-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">坑洞</span>
-          <span class="ev-date">2023-12-19</span>
-          <span class="ev-corridor c-inside">
-廊道內
-          </span>
-        </div>
-        <div class="ev-title">坑洞｜大溪區瑞安路一段（大溪橋南側至武嶺橋段人行道）</div>
-        <div class="ev-meta">
-<span>台4線30K+850~32K+000</span><span>來源：自由時報 4526078</span>          <a class="detail-link" href="q/HZ-20231219-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">淹水</span>
-          <span class="ev-date">2023-01-07</span>
-          <span class="ev-corridor c-reference">
-參考事件
-          </span>
-        </div>
-        <div class="ev-title">淹水｜龍潭區三坑抽水站下方永福路（三坑里）</div>
-        <div class="ev-meta">
-<span>非台4線</span><span>來源：自由時報 4177883</span>          <a class="detail-link" href="q/HZ-20230107-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">淹水</span>
-          <span class="ev-date">2022-09-11</span>
-          <span class="ev-corridor c-edge">
-廊道邊緣
-          </span>
-        </div>
-        <div class="ev-title">淹水｜龍潭區雙連街209巷（霄裡溪排水幹線九座寮橋上游段）</div>
-        <div class="ev-meta">
-<span>台4線約40.5K</span><span>來源：聯合新聞網 7985666</span>          <a class="detail-link" href="q/HZ-20220911-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">淹水</span>
-          <span class="ev-date">2022-05-30</span>
-          <span class="ev-corridor c-edge">
-廊道邊緣
-          </span>
-        </div>
-        <div class="ev-title">淹水｜大漢溪左岸自行車道（中庄調整池北側，武嶺橋至鶯歌方向）</div>
-        <div class="ev-meta">
-<span>台4線約29.5K</span><span>來源：中國時報 20220530000408</span>          <a class="detail-link" href="q/HZ-20220530-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-roadkill" data-type="roadkill">
-        <div class="ev-line">
-          <span class="ev-tag tag-roadkill">路殺</span>
-          <span class="ev-cat">穿山甲</span>
-          <span class="ev-date">2020-12-31</span>
-          <span class="ev-corridor c-reference">
-參考事件
-          </span>
-        </div>
-        <div class="ev-title">穿山甲路殺｜龍潭區渴望里（近年目擊彙整）</div>
-        <div class="ev-meta">
-<span>非台4線</span><span>來源：自由時報 5164892</span>          <a class="detail-link" href="q/RK-2020-AGG-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-roadkill" data-type="roadkill">
-        <div class="ev-line">
-          <span class="ev-tag tag-roadkill">路殺</span>
-          <span class="ev-cat">蛇類</span>
-          <span class="ev-date">2020-10-26</span>
-          <span class="ev-corridor c-co-line">
-共線段
-          </span>
-        </div>
-        <div class="ev-title">蛇類路殺｜大溪區瑞興里栗子園，瑞安路一段（崁津大橋北側約800m）</div>
-        <div class="ev-meta">
-<span>台4線約29.6K（推估）</span><span>來源：路殺社紀錄編號 213938</span>          <a class="detail-link" href="q/RK-20201026-001/">獨立頁 →</a>
-        </div>
-      </li>
-      <li class="ev-item ev-hazard" data-type="hazard">
-        <div class="ev-line">
-          <span class="ev-tag tag-hazard">防災</span>
-          <span class="ev-cat">邊坡滑動</span>
-          <span class="ev-date">2014-02-01</span>
-          <span class="ev-corridor c-inside">
-廊道內
-          </span>
-        </div>
-        <div class="ev-title">邊坡滑動｜大溪往崎頂方向上坡路段（歷史參考）</div>
-        <div class="ev-meta">
-<span>台4線約26K</span><span>來源：168交通安全入口網</span>          <a class="detail-link" href="q/HZ-20140201-001/">獨立頁 →</a>
-        </div>
-      </li>
-    </ul>
   </div>
 </section>
 
-<section class="section" id="overlap">
+<section class="section" id="eco">
   <div class="wrap">
-    <h2>防災 ∩ 路殺 500 公尺重疊熱點 <span class="count-badge">1 對</span></h2>
-    <ul class="pair-list">
-      <li>
-        <a href="q/HZ-20260711-002/">樹倒｜龍潭區新和路（多處斷枝）</a>
-        ↔
-        <a href="q/RK-2024-AGG-001/">蛇類路殺｜龍潭區聖德里（八德社區發展協會巡守隊守護範圍）</a>
-        <span class="dist">167 m</span>
-      </li>
-    </ul>
+    <h2>路殺生態</h2>
+    <p class="sec-lede">養護巡查路殺調查回報表 110.11–115.07 共 55 個月、43 件。可在上方地圖開「路殺點」圖層看位置。</p>
+    <div class="chart-grid">
+      <div class="chart-box"><h3>路殺物種分布</h3><canvas id="chart-species"></canvas></div>
+      <div class="chart-box">
+        <h3>說明</h3>
+        <p class="eco-note">多數為犬貓等伴生動物；<strong>食蟹獴</strong>屬《野生動物保育法》保育類，出現於路殺紀錄值得追蹤。物種與位置來自巡查員手寫回報，部分僅到路段。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cost">
+  <div class="wrap">
+    <h2>查驗金額</h2>
+    <p class="sec-lede">查驗表數量×契約單價逐項計算，共 2251 項、216 個查驗事件，累計約 NT$ 106,901,441（估算，實際以估驗計價為準）。</p>
+    <div class="chart-box wide"><h3>查驗金額 × 年度</h3><canvas id="chart-cost"></canvas></div>
+  </div>
+</section>
+
+<section class="section" id="list">
+  <div class="wrap">
+    <h2>案件清單 <span class="count-badge" id="list-count"></span></h2>
+    <p class="sec-lede">跟上方地圖篩選連動。點列展開明細。工程施工紀錄不列入熱點統計但一併呈現。</p>
+    <div class="list-controls">
+      <input type="search" id="list-search" placeholder="搜尋案件名稱、里程、編號…">
+      <label><input type="checkbox" id="only-geo"> 只看有座標</label>
+    </div>
+    <ul class="case-list" id="case-list"></ul>
+    <button id="load-more" class="load-more">載入更多</button>
   </div>
 </section>
 
 <section class="section" id="method">
   <div class="wrap">
-    <h2>方法、收錄規則、資料來源與限制</h2>
-    <div class="method-block">
-      <h3>收錄規則</h3>
-      <p>事件必須：(a) 有可查證的原始來源（新聞連結、公路局公告、路殺社紀錄或政府文件）；(b) 有明確地點描述能定位；(c) 發生於台4線 25K-41.544K 範圍或路中心線兩側 500m 緩衝廊道內。廊道外但同區具參考價值者，標「參考事件」併同顯示，不列入廊道統計。</p>
-    </div>
-    <div class="method-block">
-      <h3>排除規則</h3>
-      <p>無法定位者、僅為傳聞未查證者、發生於台4線範圍外且無區域參考價值者，不放進地圖。</p>
-    </div>
-    <div class="method-block">
-      <h3>重複處理</h3>
-      <p>同一地點多次發生仍各算一筆；巡守隊/野放等彙整型資料以「AGG」為 ID 尾綴且日期記為當年12/31以便呈現。</p>
-    </div>
+    <h2>方法、資料來源與限制</h2>
     <div class="method-block">
       <h3>資料來源</h3>
-      <ul>
-        <li>公路局北區養護工程分局復興工務段 公告與新聞稿（thbu1.thb.gov.tw）</li>
-        <li>臺灣動物路死觀察網 路殺社（roadkill.tw）</li>
-        <li>主流媒體：自由時報、聯合新聞網、中國時報、桃園電子報、ETtoday</li>
-        <li>交通部 168 交通安全入口網（歷史事件）</li>
-      </ul>
+      <p>公路局北區養護工程分局復興工務段 111–115 年度：災害/養護照片資料夾（46,501 檔、1,334 案件夾）、查驗表數量明細、巡查日報表、路殺調查回報表。案件由資料夾名稱與內容自動解析。</p>
     </div>
     <div class="method-block">
-      <h3>已知限制與未取得資料源</h3>
-      <ul>
-        <li>iNaturalist、TBN 台灣生物多樣性網、路殺社進階查詢 需登入才能匯出座標</li>
-        <li>公路局北養內部災害通報彙整表 需依《政府資訊公開法》申請</li>
-        <li>政府採購網（tender.nat.gov.tw）台4線災修合約 建議另行檢索反推事件</li>
-        <li>中央地調所山崩地滑資料庫 需 GIS 介接</li>
-        <li>桃園市府 EOC 日誌、消防局出勤紀錄 非公開</li>
-        <li>台4線 25K-39K 實際養護單位為復興工務段（非大溪工務段），北養無「大溪工務段」建制</li>
-      </ul>
+      <h3>座標與熱點</h3>
+      <p>座標由公路局「省道里程坐標（里程牌標誌）」內插產生，樁距約 300 公尺、誤差約 ±150 公尺，適用於「公里熱點」尺度。熱點以每 1 公里為一區間聚合；跨里程案件計入每個涵蓋區間。共 926 筆案件、52 個區間有座標。</p>
     </div>
     <div class="method-block">
-      <h3>座標精度</h3>
-      <p>WGS84 十進位度，5 位小數（約 1 公尺）。座標由地標推估者，事件詳細頁備註標明「座標推估」。</p>
+      <h3>統計口徑</h3>
+      <p>熱點統計以「缺失/維修案件」為主（1140 筆），工程施工紀錄與查驗紀錄不灌入單一里程件數。日期為民國紀年字串。類型為關鍵字自動初分，「其他」約 254 筆，後續人工修正會回寫資料、網站讀資料不寫死。</p>
+    </div>
+    <div class="method-block">
+      <h3>限制</h3>
+      <p>115 年度統計至 8 月為進行中；查驗金額為數量×單價估算，非估驗計價定案值；路殺物種與位置為巡查員手寫回報 AI 判讀，部分含不確定字。9 筆里程超出公告養護範圍者已排除於熱點聚合外，待業主確認。</p>
+    </div>
+    <div class="method-block">
+      <h3>養護官方範圍</h3>
+      <p>台3線 30K+560–55K+154、台3乙線 0K+000–12K+095、台4線 26K+930–39K+269（取自路殺調查表）。</p>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>本頁專責熱點空間集中度與原始來源。事件真偽、責任歸屬另由主管機關認定。</p>
-    <p class="build">Build 2026-07-19 02:47｜資料來源：<code>data/events.xlsx</code></p>
+    <p>本頁呈現養護案件的空間集中度與統計。金額為估算，案件性質與責任歸屬以主管機關認定為準。</p>
+    <p class="build">Build 2026-08-08 17:45｜資料源：<code>data/*.json</code></p>
   </div>
 </footer>
 
-<script id="events-data" type="application/json">[{"type": "hazard", "id": "HZ-20260711-001", "km": "台4線約40.2K", "location_desc": "龍潭區龍新路與竹源街口", "lat": 24.87225, "lng": 121.21645, "hazard_type": "樹倒", "date": "2026-07-11", "cause": "颱風", "impact": "部分車道", "repair_hours": null, "repair_unit": "龍潭警分局+工務單位", "cost": null, "improved": "是", "photo": null, "source": "自由時報 5503331｜https://news.ltn.com.tw/news/society/breakingnews/5503331", "notes": "台4廊道內（距台4中正路約400m）；巴威颱風10級以上強陣風；警方封鎖線交管；座標推估", "source_url": "https://news.ltn.com.tw/news/society/breakingnews/5503331", "source_text": "自由時報 5503331", "corridor": "inside", "title": "樹倒｜龍潭區龍新路與竹源街口", "category": "樹倒"}, {"type": "hazard", "id": "HZ-20260711-002", "km": "台4線約41K", "location_desc": "龍潭區新和路（多處斷枝）", "lat": 24.8605, "lng": 121.208, "hazard_type": "樹倒", "date": "2026-07-11", "cause": "颱風", "impact": "部分車道", "repair_hours": null, "repair_unit": "高平派出所+工務單位", "cost": null, "improved": "是", "photo": null, "source": "ETtoday 20260713/3199969｜https://www.ettoday.net/news/20260713/3199969.htm", "notes": "台4廊道邊緣~廊道外（距台4中正路約500~1200m）；巴威颱風強陣風；座標推估", "source_url": "https://www.ettoday.net/news/20260713/3199969.htm", "source_text": "ETtoday 20260713/3199969", "corridor": "edge", "title": "樹倒｜龍潭區新和路（多處斷枝）", "category": "樹倒"}, {"type": "hazard", "id": "HZ-20260711-003", "km": "非台4線", "location_desc": "龍潭區中豐路上林段（往新竹方向外側車道）", "lat": 24.8578, "lng": 121.2025, "hazard_type": "邊坡滑動", "date": "2026-07-11", "cause": "颱風", "impact": "部分車道", "repair_hours": null, "repair_unit": "龍潭警分局+工務單位", "cost": null, "improved": "是", "photo": null, "source": "ETtoday 20260713/3199969｜https://www.ettoday.net/news/20260713/3199969.htm", "notes": "非台4廊道 - 參考事件（中豐路屬台3乙延伸，距台4約1.5km以上）；土石崩落；座標推估", "source_url": "https://www.ettoday.net/news/20260713/3199969.htm", "source_text": "ETtoday 20260713/3199969", "corridor": "reference", "title": "邊坡滑動｜龍潭區中豐路上林段（往新竹方向外側車道）", "category": "邊坡滑動"}, {"type": "hazard", "id": "HZ-20260626-001", "km": "台4線約30.5K", "location_desc": "大溪區各處農田（月眉、康莊等台4線沿線代表點）", "lat": 24.87, "lng": 121.28, "hazard_type": "其他", "date": "2026-06-26", "cause": "豪雨", "impact": "無封閉", "repair_hours": null, "repair_unit": "桃園市農業局/大溪區公所", "cost": null, "improved": "不詳", "photo": null, "source": "自由時報 5486090｜https://news.ltn.com.tw/news/Taoyuan/breakingnews/5486090", "notes": "台4廊道內外皆有；颱風外圍豪雨導致大溪韭菜/瓜類農損；桃園累計農損23公頃；座標為區域代表點", "source_url": "https://news.ltn.com.tw/news/Taoyuan/breakingnews/5486090", "source_text": "自由時報 5486090", "corridor": "inside", "title": "其他｜大溪區各處農田（月眉、康莊等台4線沿線代表點）", "category": "其他"}, {"type": "hazard", "id": "HZ-20251222-001", "km": "台4線30K+300", "location_desc": "崁津大橋（30K+300）", "lat": 24.87608, "lng": 121.27923, "hazard_type": "其他", "date": "2025-12-22", "cause": "老化", "impact": "部分車道", "repair_hours": 240, "repair_unit": "公路局北區養護工程分局", "cost": null, "improved": "是", "photo": null, "source": "桃園電子報｜https://tyenews.com/2025/12/1169539/", "notes": "台4廊道內；橋梁伸縮縫劣化計畫性維修；12/22~12/31封閉雙向內側車道；座標為橋北端", "source_url": "https://tyenews.com/2025/12/1169539/", "source_text": "桃園電子報", "corridor": "inside", "title": "其他｜崁津大橋（30K+300）", "category": "其他"}, {"type": "roadkill", "id": "RK-20250827-001", "km": "非台4線", "location_desc": "龍潭區渴望里 渴望二路（渴望園區周邊丘陵，霄里溪上游）", "lat": 24.882, "lng": 121.221, "species": "穿山甲", "count": 1, "date": "2025-08-27", "time_of_day": "夜間(19-4)", "weather": "雨", "reporter": "渴望里里長洪揚才/里民", "source": "自由時報 5164892｜https://news.ltn.com.tw/news/Taoyuan/breakingnews/5164892", "photo": null, "environment": "森林邊緣", "friendly_facility": "無", "notes": "非台4廊道 - 參考事件；未滿1歲幼體，體重2.2kg，尾部受傷；由桃園農業局林務科、桃園鳥會野生動物診所收治；2025/9/2野放；座標推估", "source_url": "https://news.ltn.com.tw/news/Taoyuan/breakingnews/5164892", "source_text": "自由時報 5164892", "corridor": "reference", "title": "穿山甲路殺｜龍潭區渴望里 渴望二路（渴望園區周邊丘陵，霄里溪上游）", "category": "穿山甲"}, {"type": "roadkill", "id": "RK-2024-AGG-001", "km": "非台4線", "location_desc": "龍潭區聖德里（八德社區發展協會巡守隊守護範圍）", "lat": 24.859, "lng": 121.208, "species": "蛇類", "count": 26, "date": "2024-12-31", "time_of_day": "不詳", "weather": "不詳", "reporter": "八德社區赤腹游蛇巡守隊/里長徐春淼", "source": "聯合新聞網 8175764｜https://udn.com/news/story/7470/8175764", "photo": null, "environment": "水域邊", "friendly_facility": "有(警示標誌)", "notes": "非台4廊道 - 參考彙整事件（聚合統計非單一事件）；赤腹游蛇 Sinonatrix annularis，2024年救援 26 隻；桃園龍潭與台北北投為全台唯二已知族群分布區；2024/4 農業部公告瀕臨絕種；座標為區域代表點", "source_url": "https://udn.com/news/story/7470/8175764", "source_text": "聯合新聞網 8175764", "corridor": "reference", "title": "蛇類路殺｜龍潭區聖德里（八德社區發展協會巡守隊守護範圍）", "category": "蛇類"}, {"type": "hazard", "id": "HZ-20231219-001", "km": "台4線30K+850~32K+000", "location_desc": "大溪區瑞安路一段（大溪橋南側至武嶺橋段人行道）", "lat": 24.8795, "lng": 121.28685, "hazard_type": "坑洞", "date": "2023-12-19", "cause": "老化", "impact": "無封閉", "repair_hours": null, "repair_unit": "公路局北區養護工程分局復興工務段", "cost": 10000000, "improved": "是", "photo": null, "source": "自由時報 4526078｜https://news.ltn.com.tw/news/life/breakingnews/4526078", "notes": "台4廊道內；長期年久失修多次造成行人跌倒；2024/4起編列約1000萬預算改善；座標推估", "source_url": "https://news.ltn.com.tw/news/life/breakingnews/4526078", "source_text": "自由時報 4526078", "corridor": "inside", "title": "坑洞｜大溪區瑞安路一段（大溪橋南側至武嶺橋段人行道）", "category": "坑洞"}, {"type": "hazard", "id": "HZ-20230107-001", "km": "非台4線", "location_desc": "龍潭區三坑抽水站下方永福路（三坑里）", "lat": 24.85014, "lng": 121.262, "hazard_type": "淹水", "date": "2023-01-07", "cause": "施工不當", "impact": "部分車道", "repair_hours": 24, "repair_unit": "台灣自來水公司第二區管理處", "cost": null, "improved": "是", "photo": null, "source": "自由時報 4177883｜https://news.ltn.com.tw/news/life/breakingnews/4177883", "notes": "非台4廊道 - 參考事件（距台4線約1.5~2km）；台水原水管線爆管；淹水30~60cm；桃園33萬戶停水；座標推估", "source_url": "https://news.ltn.com.tw/news/life/breakingnews/4177883", "source_text": "自由時報 4177883", "corridor": "reference", "title": "淹水｜龍潭區三坑抽水站下方永福路（三坑里）", "category": "淹水"}, {"type": "hazard", "id": "HZ-20220911-001", "km": "台4線約40.5K", "location_desc": "龍潭區雙連街209巷（霄裡溪排水幹線九座寮橋上游段）", "lat": 24.9106, "lng": 121.2249, "hazard_type": "淹水", "date": "2022-09-11", "cause": "豪雨", "impact": "無封閉", "repair_hours": null, "repair_unit": "桃園市政府水務局", "cost": 22804000, "improved": "是", "photo": null, "source": "聯合新聞網 7985666｜https://udn.com/news/story/7324/7985666", "notes": "台4廊道邊緣（距台4中正路約200~500m）；上華里、九龍里淹水；改善工程 2023/8/21~2024/6/1；座標推估", "source_url": "https://udn.com/news/story/7324/7985666", "source_text": "聯合新聞網 7985666", "corridor": "edge", "title": "淹水｜龍潭區雙連街209巷（霄裡溪排水幹線九座寮橋上游段）", "category": "淹水"}, {"type": "hazard", "id": "HZ-20220530-001", "km": "台4線約29.5K", "location_desc": "大漢溪左岸自行車道（中庄調整池北側，武嶺橋至鶯歌方向）", "lat": 24.86745, "lng": 121.27953, "hazard_type": "淹水", "date": "2022-05-30", "cause": "其他", "impact": " 部分車道", "repair_hours": null, "repair_unit": "桃園市水務局", "cost": null, "improved": "是", "photo": null, "source": "中國時報 20220530000408｜https://www.chinatimes.com/newspapers/20220530000408-260107", "notes": "台4廊道邊緣（中庄調整池位於台4線正東約400m）；車道長達1km 逢雨大淹水；座標推估", "source_url": "https://www.chinatimes.com/newspapers/20220530000408-260107", "source_text": "中國時報 20220530000408", "corridor": "edge", "title": "淹水｜大漢溪左岸自行車道（中庄調整池北側，武嶺橋至鶯歌方向）", "category": "淹水"}, {"type": "roadkill", "id": "RK-2020-AGG-001", "km": "非台4線", "location_desc": "龍潭區渴望里（近年目擊彙整）", "lat": 24.882, "lng": 121.221, "species": "穿山甲", "count": 4, "date": "2020-12-31", "time_of_day": "不詳", "weather": "不詳", "reporter": "渴望里居民（洪揚才里長轉述）", "source": "自由時報 5164892｜https://news.ltn.com.tw/news/Taoyuan/breakingnews/5164892", "photo": null, "environment": "森林邊緣", "friendly_facility": "無", "notes": "非台4廊道 - 參考彙整事件（近年至少4次目擊，無個別事件日期/座標）；日期以年底統一標；座標推估", "source_url": "https://news.ltn.com.tw/news/Taoyuan/breakingnews/5164892", "source_text": "自由時報 5164892", "corridor": "reference", "title": "穿山甲路殺｜龍潭區渴望里（近年目擊彙整）", "category": "穿山甲"}, {"type": "roadkill", "id": "RK-20201026-001", "km": "台4線約29.6K（推估）", "location_desc": "大溪區瑞興里栗子園，瑞安路一段（崁津大橋北側約800m）", "lat": 24.8875, "lng": 121.2799, "species": "蛇類", "count": 1, "date": "2020-10-26", "time_of_day": "清晨(4-8)", "weather": "不詳", "reporter": "路殺社志工黃永州（鑑定人陳柏廷）", "source": "路殺社紀錄編號 213938｜https://roadkill.tw/occurrence/213938", "photo": null, "environment": "農地", "friendly_facility": "無", "notes": "台4廊道內/共線段（台3/台4崎頂）；物種為龜殼花 Protobothrops mucrosquamatus；記錄時間 06:51；OSM 反查為瑞安路一段", "source_url": "https://roadkill.tw/occurrence/213938", "source_text": "路殺社紀錄編號 213938", "corridor": "co-line", "title": "蛇類路殺｜大溪區瑞興里栗子園，瑞安路一段（崁津大橋北側約800m）", "category": "蛇類"}, {"type": "hazard", "id": "HZ-20140201-001", "km": "台4線約26K", "location_desc": "大溪往崎頂方向上坡路段（歷史參考）", "lat": 24.8599, "lng": 121.2802, "hazard_type": "邊坡滑動", "date": "2014-02-01", "cause": "持續性降雨", "impact": "單線封閉", "repair_hours": null, "repair_unit": "公路總局復興工務段", "cost": null, "improved": "是", "photo": null, "source": "168交通安全入口網｜https://168.motc.gov.tw/theme/news/post/1906121101446", "notes": "歷史參考事件（時間範圍外，供背景使用）；路面50m×15cm 張力裂縫；2014/3/15搶通；座標推估", "source_url": "https://168.motc.gov.tw/theme/news/post/1906121101446", "source_text": "168交通安全入口網", "corridor": "inside", "title": "邊坡滑動｜大溪往崎頂方向上坡路段（歷史參考）", "category": "邊坡滑動"}]</script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="assets/main.js"></script>
 </body>
 </html>

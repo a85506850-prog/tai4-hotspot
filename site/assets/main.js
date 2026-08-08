@@ -1,179 +1,279 @@
-/* 台4線大溪-龍潭段 主頁互動：Leaflet 地圖 + 圖層開關 + 熱力圖 + 篩選 + 事件列表分頁 */
-(function(){
-  var map, hazardCluster, roadkillCluster, heatLayer;
-  var allEvents = [];
-  var yearSel = document.getElementById('f-year');
+/* 復興工務段 養護熱點分析 — 前端 */
+(function () {
+  var ROUTE_COLOR = { "台3線": "#d9534f", "台3乙線": "#f0ad4e", "台4線": "#1f6feb", "未標": "#888" };
+  var map, hotspotLayer, caseCluster, roadkillLayer;
+  var DATA = { cases: [], hotspots: [], roadkill: [], charts: null };
+  var listState = { shown: 0, page: 200 };
 
-  // 優先讀取嵌入的 JSON（可離線/file:// 開啟）；失敗才 fetch
-  var inline = document.getElementById('events-data');
-  if (inline && inline.textContent.trim()) {
-    try {
-      allEvents = JSON.parse(inline.textContent);
-      initYearSelect(allEvents);
-      initMap();
-      renderMap();
-      bindControls();
-    } catch (e) { console.error('inline JSON parse 失敗', e); }
-  } else {
-    fetch('assets/events.json')
-      .then(function(r){ return r.json(); })
-      .then(function(events){
-        allEvents = events;
-        initYearSelect(events);
-        initMap();
-        renderMap();
-        bindControls();
-      })
-      .catch(function(err){ console.error('讀取 events.json 失敗', err); });
-  }
+  Promise.all([
+    fetch("assets/hotspots.json").then(r => r.json()),
+    fetch("assets/cases.json").then(r => r.json()),
+    fetch("assets/roadkill.json").then(r => r.json()),
+    fetch("assets/charts.json").then(r => r.json()),
+  ]).then(function (res) {
+    DATA.hotspots = res[0];
+    DATA.cases = res[1];
+    DATA.roadkill = res[2];
+    DATA.charts = res[3];
+    initFilters();
+    initMap();
+    renderMap();
+    renderCharts();
+    bindControls();
+    renderList(true);
+  }).catch(function (e) { console.error("資料載入失敗", e); });
 
-  function initYearSelect(events){
+  function initFilters() {
     var years = {};
-    events.forEach(function(e){
-      if (e.date) { years[e.date.substring(0,4)] = true; }
+    DATA.cases.forEach(c => { if (c.year) years[c.year] = true; });
+    var ysel = document.getElementById("f-year");
+    Object.keys(years).sort().forEach(function (y) {
+      var o = document.createElement("option"); o.value = y; o.textContent = "民國 " + y; ysel.appendChild(o);
     });
-    Object.keys(years).sort().reverse().forEach(function(y){
-      var opt = document.createElement('option');
-      opt.value = y; opt.textContent = y;
-      yearSel.appendChild(opt);
+    var cats = {};
+    DATA.cases.forEach(c => { if (c.category) cats[c.category] = (cats[c.category] || 0) + 1; });
+    var csel = document.getElementById("f-category");
+    Object.keys(cats).sort((a, b) => cats[b] - cats[a]).forEach(function (c) {
+      var o = document.createElement("option"); o.value = c; o.textContent = c + " (" + cats[c] + ")"; csel.appendChild(o);
     });
   }
 
-  function initMap(){
-    // 中心點：台4線 大溪-龍潭中段
-    map = L.map('map').setView([24.870, 121.245], 12);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap 貢獻者', maxZoom: 19
+  function initMap() {
+    map = L.map("map").setView([24.86, 121.26], 12);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "© OpenStreetMap 貢獻者", maxZoom: 19
     }).addTo(map);
-
-    hazardCluster = L.markerClusterGroup({
-      iconCreateFunction: function(cluster){
-        return L.divIcon({html: '<div class="cluster-badge cluster-hazard">'+cluster.getChildCount()+'</div>', className:'', iconSize:[36,36]});
-      }
-    });
-    roadkillCluster = L.markerClusterGroup({
-      iconCreateFunction: function(cluster){
-        return L.divIcon({html: '<div class="cluster-badge cluster-roadkill">'+cluster.getChildCount()+'</div>', className:'', iconSize:[36,36]});
-      }
-    });
-    hazardCluster.addTo(map);
-    roadkillCluster.addTo(map);
+    hotspotLayer = L.layerGroup().addTo(map);
+    caseCluster = L.markerClusterGroup({ chunkedLoading: true });
+    roadkillLayer = L.layerGroup();
   }
 
-  function renderMap(){
-    var yearFilter = yearSel.value;
-    var corridorFilters = Array.prototype.filter.call(
-      document.querySelectorAll('.f-corridor'),
-      function(cb){ return cb.checked; }
-    ).map(function(cb){ return cb.value; });
-    var showHazard = document.getElementById('lyr-hazard').checked;
-    var showRoad = document.getElementById('lyr-roadkill').checked;
-    var showHeat = document.getElementById('lyr-heat').checked;
+  function activeRoutes() {
+    return Array.prototype.filter.call(document.querySelectorAll(".f-route"), cb => cb.checked).map(cb => cb.value);
+  }
 
-    hazardCluster.clearLayers();
-    roadkillCluster.clearLayers();
-    if (heatLayer) { map.removeLayer(heatLayer); heatLayer = null; }
+  function passFilter(x) {
+    var routes = activeRoutes();
+    var y = document.getElementById("f-year").value;
+    var cat = document.getElementById("f-category").value;
+    if (routes.indexOf(x.route || "未標") === -1) return false;
+    if (y && String(x.year) !== y) return false;
+    if (cat && x.category !== cat) return false;
+    return true;
+  }
 
-    var heatPts = [];
-    var shown = 0;
+  function renderMap() {
+    var showHot = document.getElementById("lyr-hotspot").checked;
+    var showCases = document.getElementById("lyr-cases").checked;
+    var showRk = document.getElementById("lyr-roadkill").checked;
+    var routes = activeRoutes();
+    var y = document.getElementById("f-year").value;
+    var cat = document.getElementById("f-category").value;
 
-    allEvents.forEach(function(e){
-      if (!e.lat || !e.lng) return;
-      if (yearFilter && !(e.date && e.date.startsWith(yearFilter))) return;
-      if (corridorFilters.indexOf(e.corridor) === -1) return;
-      if (e.type === 'hazard' && !showHazard) return;
-      if (e.type === 'roadkill' && !showRoad) return;
+    hotspotLayer.clearLayers();
+    caseCluster.clearLayers();
+    roadkillLayer.clearLayers();
 
-      var lat = parseFloat(e.lat), lng = parseFloat(e.lng);
-      var color = e.type === 'hazard' ? '#1f6feb' : '#d33';
-      var marker = L.circleMarker([lat, lng], {
-        radius: 7, color: color, weight: 2, fillColor: color, fillOpacity: 0.6
+    // 熱點泡泡
+    if (showHot) {
+      DATA.hotspots.forEach(function (h) {
+        if (!h.lat) return;
+        if (routes.indexOf(h.route) === -1) return;
+        // 年份/類型篩選：以該熱點是否含有符合條件案件近似（用 by_year / by_category）
+        if (y && !(h.by_year && h.by_year[y])) return;
+        if (cat && !(h.by_category && h.by_category[cat])) return;
+        var r = 8 + Math.sqrt(h.total) * 3.2;
+        var color = ROUTE_COLOR[h.route] || "#888";
+        var m = L.circleMarker([h.lat, h.lon], {
+          radius: r, color: color, weight: 1.5, fillColor: color, fillOpacity: 0.35
+        });
+        m.bindPopup(hotspotPopup(h));
+        hotspotLayer.addLayer(m);
       });
-      marker.bindPopup(popupHtml(e));
-      if (e.type === 'hazard') hazardCluster.addLayer(marker);
-      else roadkillCluster.addLayer(marker);
-      heatPts.push([lat, lng, e.type === 'hazard' ? 0.8 : 0.6]);
-      shown++;
-    });
-
-    if (showHeat && heatPts.length > 0 && typeof L.heatLayer === 'function') {
-      heatLayer = L.heatLayer(heatPts, {radius: 32, blur: 22, maxZoom: 15}).addTo(map);
     }
 
-    // 更新事件列表
-    renderList();
+    // 個別案件點
+    if (showCases) {
+      DATA.cases.forEach(function (c) {
+        if (!c.lat || !passFilter(c)) return;
+        var color = ROUTE_COLOR[c.route] || "#888";
+        var mk = L.circleMarker([c.lat, c.lon], {
+          radius: 5, color: color, weight: 1, fillColor: color, fillOpacity: 0.7
+        });
+        mk.bindPopup(casePopup(c));
+        caseCluster.addLayer(mk);
+      });
+      if (!map.hasLayer(caseCluster)) map.addLayer(caseCluster);
+    } else if (map.hasLayer(caseCluster)) {
+      map.removeLayer(caseCluster);
+    }
+
+    // 路殺
+    if (showRk) {
+      DATA.roadkill.forEach(function (p) {
+        if (!p.lat) return;
+        if (routes.indexOf(p.route) === -1) return;
+        var mk = L.circleMarker([p.lat, p.lon], {
+          radius: 6, color: "#7d1fa8", weight: 2, fillColor: "#b06ad6", fillOpacity: 0.7
+        });
+        mk.bindPopup("<b>路殺｜" + esc(p.species) + "</b><br>" + esc(p.month) + "　" + esc(p.route) + "<br>" + esc(p.note));
+        roadkillLayer.addLayer(mk);
+      });
+      if (!map.hasLayer(roadkillLayer)) map.addLayer(roadkillLayer);
+    } else if (map.hasLayer(roadkillLayer)) {
+      map.removeLayer(roadkillLayer);
+    }
   }
 
-  function popupHtml(e){
-    var tag = e.type === 'hazard' ? '防災' : '路殺';
-    var url = 'q/' + e.id + '/';
-    var meta = (e.km ? e.km + '｜' : '') + (e.date || '');
-    return '<div class="p-title">['+tag+'] '+ escapeHtml(e.title) +'</div>'+
-           '<div class="p-meta">'+ escapeHtml(meta) +'</div>'+
-           '<a href="'+ url +'">開啟事件詳細頁 →</a>';
+  function hotspotPopup(h) {
+    var cats = Object.entries(h.by_category || {}).sort((a, b) => b[1] - a[1]).slice(0, 4)
+      .map(e => e[0] + " " + e[1]).join("、");
+    var yrs = Object.entries(h.by_year || {}).sort().map(e => "民" + e[0] + ":" + e[1]).join("　");
+    return '<div class="p-title">' + esc(h.label) + '｜' + h.total + ' 件</div>' +
+      '<div class="p-meta">' + esc(cats) + '</div>' +
+      '<div class="p-meta">' + esc(yrs) + '</div>';
   }
 
-  function escapeHtml(s){
-    if (s == null) return '';
-    return String(s).replace(/[&<>"']/g, function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
+  function casePopup(c) {
+    return '<div class="p-title">' + esc(c.id) + '</div>' +
+      '<div class="p-meta">' + esc(c.route || "") + " " + esc(c.km_raw || "") + "｜" + esc(c.date || "") + '</div>' +
+      '<div class="p-meta">' + esc(c.category) + "｜" + esc(c.kind) + '</div>' +
+      '<div style="margin-top:4px">' + esc(c.name) + '</div>';
   }
 
-  function bindControls(){
-    ['lyr-hazard','lyr-roadkill','lyr-heat'].forEach(function(id){
-      document.getElementById(id).addEventListener('change', renderMap);
-    });
-    Array.prototype.forEach.call(document.querySelectorAll('.f-corridor'), function(cb){
-      cb.addEventListener('change', renderMap);
-    });
-    yearSel.addEventListener('change', renderMap);
+  function bindControls() {
+    ["lyr-hotspot", "lyr-cases", "lyr-roadkill"].forEach(id =>
+      document.getElementById(id).addEventListener("change", renderMap));
+    Array.prototype.forEach.call(document.querySelectorAll(".f-route"), cb =>
+      cb.addEventListener("change", function () { renderMap(); renderList(true); }));
+    document.getElementById("f-year").addEventListener("change", function () { renderMap(); renderList(true); });
+    document.getElementById("f-category").addEventListener("change", function () { renderMap(); renderList(true); });
+    document.getElementById("list-search").addEventListener("input", function () { renderList(true); });
+    document.getElementById("only-geo").addEventListener("change", function () { renderList(true); });
+    document.getElementById("load-more").addEventListener("click", function () { renderList(false); });
 
-    // 事件列表分頁
-    Array.prototype.forEach.call(document.querySelectorAll('.tab-btn'), function(btn){
-      btn.addEventListener('click', function(){
-        Array.prototype.forEach.call(document.querySelectorAll('.tab-btn'), function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        renderList();
+    Array.prototype.forEach.call(document.querySelectorAll(".focus-link"), function (a) {
+      a.addEventListener("click", function () {
+        var lat = parseFloat(a.dataset.lat), lon = parseFloat(a.dataset.lon);
+        if (!isNaN(lat)) { map.setView([lat, lon], 15); }
       });
     });
   }
 
-  function renderList(){
-    var activeTab = document.querySelector('.tab-btn.active');
-    var tab = activeTab ? activeTab.dataset.tab : 'all';
-    var yearFilter = yearSel.value;
-    var corridorFilters = Array.prototype.filter.call(
-      document.querySelectorAll('.f-corridor'),
-      function(cb){ return cb.checked; }
-    ).map(function(cb){ return cb.value; });
-
-    Array.prototype.forEach.call(document.querySelectorAll('.ev-item'), function(li){
-      var type = li.dataset.type;
-      var passTab = (tab === 'all' || tab === type);
-      // 從 li 找出對應 event 的 corridor / year
-      // 因為 li 沒帶 attribute，我們用文字內容 fallback：直接由 checkbox 全開時忽略
-      var corridorEl = li.querySelector('.ev-corridor');
-      var corridorClass = corridorEl ? (corridorEl.className.match(/c-(\S+)/) || [])[1] : null;
-      var dateEl = li.querySelector('.ev-date');
-      var year = dateEl && dateEl.textContent ? dateEl.textContent.substring(0,4) : null;
-
-      var passCorridor = !corridorClass || corridorFilters.indexOf(corridorClass) !== -1;
-      var passYear = !yearFilter || year === yearFilter;
-
-      li.classList.toggle('hidden', !(passTab && passCorridor && passYear));
+  function filteredCases() {
+    var q = (document.getElementById("list-search").value || "").trim();
+    var onlyGeo = document.getElementById("only-geo").checked;
+    return DATA.cases.filter(function (c) {
+      if (!passFilter(c)) return false;
+      if (onlyGeo && !c.lat) return false;
+      if (q) {
+        var hay = (c.name + " " + c.id + " " + (c.km_raw || "") + " " + c.category).toLowerCase();
+        if (hay.indexOf(q.toLowerCase()) === -1) return false;
+      }
+      return true;
     });
   }
-})();
 
-/* Cluster badge styles injected */
-(function(){
-  var s = document.createElement('style');
-  s.textContent = ''+
-    '.cluster-badge{display:flex;align-items:center;justify-content:center;width:36px;height:36px;'+
-    'border-radius:18px;color:white;font-weight:700;font-size:13px;border:2px solid white;'+
-    'box-shadow:0 1px 3px rgba(0,0,0,0.3);}'+
-    '.cluster-hazard{background:#1f6feb;}'+
-    '.cluster-roadkill{background:#d33;}';
-  document.head.appendChild(s);
+  function renderList(reset) {
+    var list = document.getElementById("case-list");
+    var arr = filteredCases();
+    document.getElementById("list-count").textContent = arr.length + " 筆";
+    if (reset) { list.innerHTML = ""; listState.shown = 0; }
+    var end = Math.min(listState.shown + listState.page, arr.length);
+    for (var i = listState.shown; i < end; i++) {
+      list.appendChild(caseRow(arr[i]));
+    }
+    listState.shown = end;
+    document.getElementById("load-more").style.display = end < arr.length ? "block" : "none";
+  }
+
+  function caseRow(c) {
+    var li = document.createElement("li");
+    li.className = "case-item";
+    var color = ROUTE_COLOR[c.route] || "#888";
+    var geo = c.lat ? '<span class="geo-dot" title="有座標"></span>' : "";
+    li.innerHTML =
+      '<div class="ci-head">' +
+      '<span class="ci-route" style="background:' + color + '">' + esc(c.route || "未標") + '</span>' +
+      '<span class="ci-cat">' + esc(c.category) + '</span>' +
+      '<span class="ci-km">' + esc(c.km_raw || "—") + '</span>' +
+      '<span class="ci-date">' + esc(c.date || "") + '</span>' + geo +
+      '</div>' +
+      '<div class="ci-name">' + esc(c.name) + '</div>' +
+      '<div class="ci-detail">' +
+      '編號 ' + esc(c.id) + '｜' + esc(c.kind) + '／' + esc(c.nature) +
+      '｜來源 ' + esc(c.source || "—") + '｜照片 ' + (c.photo_count || 0) + ' 張' +
+      (c.completed_mark ? '｜<span class="ok">已完工</span>' : "") +
+      (c.lat ? '｜<a href="#map-section" class="jump" data-lat="' + c.lat + '" data-lon="' + c.lon + '">地圖定位 →</a>' : "") +
+      '</div>';
+    li.querySelector(".ci-head").addEventListener("click", function () { li.classList.toggle("open"); });
+    var jump = li.querySelector(".jump");
+    if (jump) jump.addEventListener("click", function () {
+      map.setView([parseFloat(jump.dataset.lat), parseFloat(jump.dataset.lon)], 16);
+    });
+    return li;
+  }
+
+  // ---------- Charts ----------
+  function renderCharts() {
+    var c = DATA.charts;
+    var font = { family: "'Noto Sans TC', sans-serif" };
+    Chart.defaults.font.family = font.family;
+
+    barChart("chart-year", Object.keys(c.cases_by_year).map(y => "民" + y),
+      [{ label: "全部案件", data: Object.values(c.cases_by_year), backgroundColor: "#1f6feb" },
+       { label: "缺失/維修", data: Object.values(c.defects_by_year), backgroundColor: "#9ec5f2" }]);
+
+    hbarChart("chart-category", Object.keys(c.by_category), Object.values(c.by_category), "#d9534f");
+    pieChart("chart-route", Object.keys(c.by_route), Object.values(c.by_route),
+      Object.keys(c.by_route).map(r => ({ "台3線": "#d9534f", "台3乙線": "#f0ad4e", "台4線": "#1f6feb", "未標": "#bbb" }[r] || "#888")));
+    pieChart("chart-kind", Object.keys(c.by_kind), Object.values(c.by_kind), ["#e24b4a", "#1d9e75"]);
+    hbarChart("chart-species", Object.keys(c.rk_species), Object.values(c.rk_species), "#7d1fa8");
+
+    barChart("chart-cost", Object.keys(c.cost_by_year).map(y => "民" + y),
+      [{ label: "查驗金額(估)", data: Object.values(c.cost_by_year), backgroundColor: "#0f6e56" }],
+      function (v) { return (v / 10000).toFixed(0) + "萬"; });
+  }
+
+  function barChart(id, labels, datasets, yfmt) {
+    var el = document.getElementById(id); if (!el) return;
+    new Chart(el, {
+      type: "bar",
+      data: { labels: labels, datasets: datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: datasets.length > 1 } },
+        scales: { y: { beginAtZero: true, ticks: yfmt ? { callback: yfmt } : {} } }
+      }
+    });
+  }
+  function hbarChart(id, labels, data, color) {
+    var el = document.getElementById(id); if (!el) return;
+    new Chart(el, {
+      type: "bar",
+      data: { labels: labels, datasets: [{ data: data, backgroundColor: color }] },
+      options: {
+        indexAxis: "y", responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true } }
+      }
+    });
+  }
+  function pieChart(id, labels, data, colors) {
+    var el = document.getElementById(id); if (!el) return;
+    new Chart(el, {
+      type: "doughnut",
+      data: { labels: labels, datasets: [{ data: data, backgroundColor: colors }] },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "right" } } }
+    });
+  }
+
+  function esc(s) {
+    if (s == null) return "";
+    return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  // cluster badge 顏色
+  var st = document.createElement("style");
+  st.textContent = ".marker-cluster{background:rgba(31,111,235,.25)}.marker-cluster div{background:rgba(31,111,235,.7);color:#fff}";
+  document.head.appendChild(st);
 })();
