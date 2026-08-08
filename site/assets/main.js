@@ -46,6 +46,36 @@
     hotspotLayer = L.layerGroup().addTo(map);
     caseCluster = L.markerClusterGroup({ chunkedLoading: true });
     roadkillLayer = L.layerGroup();
+    addSizeLegend();
+  }
+
+  function hsRadius(total) { return Math.min(6 + total * 0.55, 42); }
+
+  function addSizeLegend() {
+    var legend = L.control({ position: "bottomright" });
+    legend.onAdd = function () {
+      var div = L.DomUtil.create("div", "size-legend");
+      var samples = [70, 40, 15, 5];
+      var rows = samples.map(function (n) {
+        var d = Math.round(hsRadius(n) * 2);
+        return '<div class="sl-row">' +
+          '<span class="sl-cw" style="width:' + d + 'px;height:' + d + 'px">' +
+          '<span class="sl-circle" style="width:' + d + 'px;height:' + d + 'px"></span></span>' +
+          '<span class="sl-lbl">' + n + ' 件</span></div>';
+      }).join("");
+      div.innerHTML = '<div class="sl-title">圈圈大小＝案件數</div>' + rows;
+      return div;
+    };
+    legend.addTo(map);
+    var s = document.createElement("style");
+    s.textContent =
+      ".size-legend{background:rgba(255,255,255,.92);border:1px solid #e2e4e8;border-radius:6px;padding:8px 10px;font-size:12px;color:#333;line-height:1.3}" +
+      ".size-legend .sl-title{font-weight:600;margin-bottom:8px}" +
+      ".size-legend .sl-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}" +
+      ".size-legend .sl-cw{display:flex;align-items:center;justify-content:center;flex:none}" +
+      ".size-legend .sl-circle{display:inline-block;border-radius:50%;border:1.5px solid #1f6feb;background:rgba(31,111,235,.25)}" +
+      ".size-legend .sl-lbl{white-space:nowrap;color:#555}";
+    document.head.appendChild(s);
   }
 
   function activeRoutes() {
@@ -82,7 +112,7 @@
         // 年份/類型篩選：以該熱點是否含有符合條件案件近似（用 by_year / by_category）
         if (y && !(h.by_year && h.by_year[y])) return;
         if (cat && !(h.by_category && h.by_category[cat])) return;
-        var r = 8 + Math.sqrt(h.total) * 3.2;
+        var r = Math.min(6 + h.total * 0.55, 42);
         var color = ROUTE_COLOR[h.route] || "#888";
         var m = L.circleMarker([h.lat, h.lon], {
           radius: r, color: color, weight: 1.5, fillColor: color, fillOpacity: 0.35
